@@ -1,0 +1,703 @@
+﻿//登录页面
+.loginimportWrap {
+    width: 100%;
+    height: 544px;
+    background: url(../images/loginImportBg.png) center center no-repeat;
+    margin: 89px auto 110px auto;
+    background-size: cover;
+    -webkit-box-shadow: 0px 0px 2px 2.5px #c2c2c3;
+
+    .sameWidth {
+        position: relative;
+
+        .loginImport {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 350px;
+            padding: 40px 30px 26px 30px;
+            background-color: #fbefed;
+
+            .loginTitle {
+                position: relative;
+                height: 0;
+                border-top: 1px solid #dad0cf;
+                border-bottom: 1px solid #fff;
+                margin-top: 15px;
+
+                img {
+                    position: absolute;
+                    display: block;
+                    font-size: 24px;
+                    color: #ff7900;
+                    top: -20px;
+                    left: 0;
+                    background-color: #fbf0ee;
+                }
+            }
+
+            .loginFormWrap {
+                position: relative;
+                margin-top: 63px;
+
+                .errorMessages {
+                    display: none;
+                    position: absolute;
+                    width: 320px;
+                    height: 24px;
+                    line-height: 24px;
+                    border: 1px solid #e4393c;
+                    padding-left: 25px;
+                    background: #ffebeb url(../images/loginError.png) 5px center no-repeat;
+                    top: -38px;
+                    color: #e4393c;
+                    overflow: hidden;
+
+                    label.error {
+                        display: block;
+                        height: 24px;
+                        line-height: 24px;
+                        overflow: hidden;
+                        left: 30px;
+                        top: 0;
+                    }
+                }
+
+                .loginTable {
+                    .codeTr {
+                        display: none;
+                    }
+
+                    td {
+                        padding-bottom: 25px;
+
+                        .loginCode {
+                            .loginCodeInput {
+                                width: 140px;
+                                height: 28px;
+                                line-height: 28px;
+                                padding-left: 10px;
+                                padding-right: 4px;
+                                color: #d2d2d2;
+                                font-family: SimSun;
+                            }
+
+                            a {
+                                margin-left: 8px;
+                                margin-top: 2px;
+                                font-family: SimSun;
+                                color: #646464;
+                                /*&:hover{
+                                    color:#ff7900;
+                                }*/
+                                img {
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                    }
+
+                    .loginInput {
+                        width: 300px;
+                        height: 39px;
+                        border: 2px solid #bebebe;
+                        border-radius: 20px;
+                        background-color: #f6f7f8;
+                        outline: none;
+                        padding-left: 40px;
+                        padding-right: 5px;
+                        font-family: SimSun;
+                    }
+                }
+
+                .loginInput1 {
+                    background: url(../images/usericon.png) 10px center no-repeat;
+                }
+
+                .loginInput2 {
+                    background: url(../images/lockicon.png) 10px center no-repeat;
+                }
+
+                .loginSubmitBtn {
+                    width: 345px;
+                    height: 48px;
+                    line-height: 48px;
+                    background-color: #ff7900;
+                    color: #fff;
+                    font-size: 20px;
+                    text-align: center;
+                    border: none;
+                    border-radius: 25px;
+                    outline: none;
+                }
+
+                .account {
+                    margin-top: -7px;
+                    font-size: 14px;
+
+                    .noAcount {
+                        font-family: SimSun;
+                        color: #666;
+
+                        a {
+                            color: #ff7900;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .forgetPWD {
+                        font-family: SimSun;
+                        color: #666;
+                    }
+                }
+
+                .otherWayLogin {
+                    position: relative;
+                    border-top: 1px solid #dad0cf;
+                    margin-top: 60px;
+
+                    .otherWayTitle {
+                        position: absolute;
+                        top: -15px;
+                        left: 50%;
+                        background-color: #faefed;
+                        padding: 0 15px;
+                        margin-left: -78px;
+                    }
+
+                    .ways {
+                        padding-top: 26px;
+
+                        a {
+                            display: block;
+                            float: left;
+                            width: 33.2%;
+                            text-align: center;
+
+                            p {
+                                font-size: 16px;
+                                color: #828282;
+                                line-height: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*注册公用下一步按钮*/
+.stepSubmitBtn {
+    display: block;
+    width: 278px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+    background-color: #ff7900;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    margin: 18px auto;
+}
+
+label.error {
+    position: absolute;
+    font-family: SimSun;
+    color: #ff3300;
+    left: 280px;
+    top: 50px;
+}
+//注册页面(和成功页面公用左侧和上半边部分)
+.registMain {
+    margin-top: 89px;
+    margin-bottom: 119px;
+    -webkit-box-shadow: 0px 0px 2px 2.5px #c2c2c3;
+
+    .registTopNotice {
+        position: relative;
+        width: 100%;
+        height: 140px;
+        background: url(../images/registHead.png) center center no-repeat;
+
+        .loginImgWrap {
+            position: absolute;
+            left: 44%;
+            top: 60px;
+        }
+
+        p {
+            font-family: SimSun;
+            color: #fff;
+            letter-spacing: 1px;
+            font-size: 14px;
+            line-height: 13px;
+
+            a {
+                color: #ff7900;
+                font-family: SimSun;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .registStep {
+        background: url(../images/backPassword.png) center center no-repeat;
+    }
+
+    .registchoiceMain {
+        padding: 23px 0;
+        background-color: #fff;
+
+        .registText {
+            width: 400px;
+            height: 320px;
+            padding: 18px 0 20px 136px;
+            border-right: 1px solid #ececec;
+
+            .noticeRegist {
+                font-size: 16px;
+                color: #ff7900;
+                padding: 25px 0 30px 0;
+            }
+
+            .registNotice {
+                p {
+                    font-size: 16px;
+                    color: #898989;
+                    line-height: 35px;
+
+                    span {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: #fff;
+                        border-radius: 3px;
+                        background-color: #898989;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .registSelect {
+            //注册入口
+            .registInner a {
+                margin-left: 31px;
+
+                &:first-child {
+                    margin-left: 41px;
+                }
+            }
+            //用户注册入口
+            .userInner, .saleInner {
+                margin-left: 30px;
+                display: none;
+
+                .userTable {
+                    tr {
+                        td {
+                            padding: 12px 90px 8px 0;
+                            position: relative;
+                        }
+                    }
+
+                    p {
+                        color: #000;
+                        font-size: 14px;
+                        line-height: 30px;
+                    }
+
+                    .registInput {
+                        width: 260px;
+                        height: 38px;
+                        line-height: 38px;
+                        padding-left: 10px;
+                        padding-right: 3px;
+                    }
+
+                    .messageCode {
+                        width: 134px;
+                        height: 38px;
+                        line-height: 38px;
+                        padding-left: 10px;
+                        padding-right: 3px;
+                    }
+
+                    .codeBtn {
+                        width: 111px;
+                        height: 31px;
+                        line-height: 31px;
+                        text-align: center;
+                        font-family: SimSun;
+                        color: #333;
+                        background-color: #fff;
+                        font-size: 12px;
+                        margin-left: 10px;
+                    }
+
+                    .codeImg {
+                        width: 80px;
+                        text-align: center;
+                        margin-left: 8px;
+
+                        a {
+                            display: block;
+                            line-height: 25px;
+                        }
+                    }
+
+                    .code {
+                        width: 167px;
+                        height: 38px;
+                        line-height: 38px;
+                        padding-left: 10px;
+                        padding-right: 3px;
+                    }
+
+                    .userDeal {
+                        color: #000;
+                        font-family: SimSun;
+                        position: relative;
+                        top: 18px;
+
+                        input {
+                            vertical-align: middle;
+                            margin-right: 10px;
+                            margin-top: -2px;
+                        }
+
+                        a {
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .userRegistBtn, .saleRegistBtn {
+                    width: 295px;
+                    height: 48px;
+                    line-height: 48px;
+                    text-align: center;
+                    background-color: #ff7900;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 18px;
+                    border: none;
+                    margin-left: 180px;
+                    margin-top: 7px;
+                    border-radius: 30px;
+                    letter-spacing: 1px;
+                    outline: none;
+                }
+
+                .saleRegistBtn {
+                    margin-left: 0;
+                }
+            }
+
+            .saleInner #salerForm .userDeal {
+                position: relative;
+                top: 5px;
+            }
+            //经销商注册入口
+            .saleInner {
+                display: none;
+            }
+        }
+    }
+}
+/*用户注册协议弹窗*/
+.userDealPop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/blackBg.png) left top repeat;
+    z-index: 500;
+
+    .userPopInner {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        height: 430px;
+        padding: 15px 15px 26px 16px;
+        margin-left: -250px;
+        margin-top: -215px;
+        z-index: 600;
+        background-color: #fff;
+
+        .userDealText {
+            height: 390px;
+            margin-top: 40px;
+            font-family: SimSun;
+            color: #555;
+            line-height: 25px;
+            overflow: scroll;
+
+            p {
+                font-weight: bold;
+            }
+        }
+
+        .closeImg {
+            cursor: pointer;
+        }
+    }
+}
+//经销商注册成功页面
+.registSuccNotice {
+    padding-left: 73px;
+    width: 670px;
+    height: 375px;
+    background: url(../images/registSucc.png) right 0 no-repeat;
+
+    .succText {
+        margin-top: 115px;
+
+        p {
+            font-size: 26px;
+            color: #ff7900;
+            letter-spacing: 0.5px;
+        }
+
+        .contactService {
+            font-size: 14px;
+            color: #898989;
+            font-family: SimSun;
+            padding-left: 30px;
+            padding-top: 5px;
+
+            a {
+                padding: 0 5px;
+                color: #ff7900;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+/*找回密码第一步*/
+.backPWDMain {
+    background-color: #fff;
+    padding-top: 1px;
+    padding-bottom: 66px;
+}
+
+.messageImport {
+    padding-bottom: 33px;
+
+    label.error {
+        position: absolute;
+        top: 20px;
+        left: 255px;
+        color: #ff0000;
+        font-family: SimSun;
+    }
+
+    .step1Table {
+        width: 400px;
+        margin: 54px auto 0 auto;
+
+        tr {
+            td {
+                padding: 10px 0 30px 0;
+                position: relative;
+
+                &:first-child {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+
+                .stepInput {
+                    width: 220px;
+                    height: 38px;
+                    line-height: 38px;
+                    padding-left: 10px;
+                    padding-right: 5px;
+                    border: 1px solid #ccc;
+                }
+
+                .stepCode {
+                    .stepCodeInput {
+                        width: 100px;
+                        padding-left: 10px;
+                        padding-right: 5px;
+                        height: 38px;
+                        line-height: 38px;
+                        border: 1px solid #ccc;
+                    }
+
+                    .codeWrap {
+                        margin-left: 10px;
+                        margin-top: 9px;
+
+                        a {
+                            color: #000;
+                            font-size: 12px;
+                            margin-top: 10px;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*找回密码第二步*/
+.step2Main {
+    text-align: center;
+    margin: 82px auto 0 auto;
+    font-size: 14px;
+
+    p {
+        font-family: SimSun;
+        color: #000;
+        letter-spacing: .5px;
+
+        span {
+            color: #ff7900;
+            font-weight: bold;
+            padding: 0 3px;
+        }
+    }
+
+    .step2Code {
+        position: relative;
+        font-family: SimSun;
+        color: #000;
+        font-size: 14px;
+        width: 350px;
+        margin: 25px auto 65px auto;
+
+        label.error {
+            left: 385px;
+            top: 31px;
+        }
+
+        span {
+            margin-top: 12px;
+        }
+
+        .step2Input {
+            width: 120px;
+            height: 38px;
+            line-height: 38px;
+            padding-left: 10px;
+            padding-right: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .getCode {
+            width: 111px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+            background-color: #fff;
+            font-family: SimSun;
+            font-size: 12px;
+            margin-top: 3px;
+            margin-left: 10px;
+            border-color: #bababa;
+        }
+    }
+}
+/*找回密码第三步*/
+.step3Table {
+    width: 430px;
+    margin: 43px auto 30px auto;
+
+    tr {
+        td {
+            position: relative;
+            padding: 20px 0;
+
+            label.error {
+                left: 235px;
+                top: 30px;
+            }
+
+            &:first-child {
+                text-align: right;
+                padding-right: 10px;
+            }
+
+            .step3Input {
+                width: 200px;
+                padding-left: 10px;
+                padding-right: 3px;
+                height: 38px;
+                line-height: 38px;
+                border: 1px solid #ccc;
+            }
+        }
+    }
+}
+/*购物车第四步*/
+.succNoticeWrap {
+    width: 560px;
+    height: 300px;
+    margin: 40px auto 0 auto;
+    background: url(../images/step4.png) left top no-repeat;
+
+    .step4Text {
+        padding-left: 300px;
+        font-size: 20px;
+        color: #898989;
+        padding-top: 80px;
+        padding-bottom: 85px;
+
+        p {
+            color: #078b01;
+            font-size: 24px;
+        }
+    }
+
+    .step4QuickLinks {
+        width: 385px;
+        margin: 0 auto;
+
+        a {
+            display: block;
+            float: left;
+            width: 170px;
+            height: 48px;
+            line-height: 48px;
+            background-color: #ffb400;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 30px;
+            margin-left: 33px;
+
+            &:first-child {
+                background-color: #ff7900;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media(max-width:1338px) {
+    .registMain .registTopNotice p {
+        left: 43.5%;
+    }
+}

@@ -1,0 +1,1349 @@
+﻿.topImg{
+    display:block;
+    margin-bottom:-12px;
+}
+/*.leftLinks.brandKind{
+    margin-bottom:35px;
+}*/
+/*购物车弹窗*/
+.popup {
+    width: 341px;
+    height: 175px;
+    background: #fff;
+    border: 2px solid #e3e3e3;
+    position: absolute;
+    top: 373px;
+    left: 635px;
+    padding: 10px;
+    display: none;
+    z-index: 1000;
+
+    .delete {
+        text-align: right;
+        background: url(../images/dealer19.png) right 0 no-repeat;
+        height: 26px;
+        width: 100%;
+
+        :hover {
+            cursor: pointer;
+        }
+    }
+
+    .succeed {
+        font-size: 20px;
+        text-align: center;
+        color: #757575;
+        margin-bottom: 13px;
+    }
+
+    .money {
+        font-size: 12px;
+        text-align: center;
+        color: #757575;
+        font-family: SimHei;
+        margin-bottom: 29px;
+
+        span {
+            font-weight: 600;
+            color: #ff7900;
+        }
+    }
+
+    .examine {
+        width: 100%;
+        height: 54px;
+
+        a {
+            background: #b26aef url(../images/dealer13.png)25px 12px no-repeat;
+            color: #fff;
+            line-height: 54px;
+            width: 180px;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            text-indent: 35px;
+            font-size: 20px;
+            border-radius: 50px;
+        }
+    }
+}
+/*收藏弹窗*/
+.collectPopup {
+    width: 330px;
+    height: 160px;
+    background: #fff;
+    border: 2px solid #e3e3e3;
+    position: absolute;
+    top: 373px;
+    left: 635px;
+    padding: 10px;
+    display: none;
+    z-index: 1000;
+
+    .delete {
+        text-align: right;
+        background: url(../images/dealer19.png) right 0 no-repeat;
+        height: 28px;
+        margin-bottom: 10px;
+        width: 100%;
+
+        :hover {
+            cursor: pointer;
+        }
+    }
+
+    .succeed {
+        font-size: 20px;
+        text-align: center;
+        color: #757575;
+        margin-bottom: 13px;
+    }
+
+    .money {
+        font-size: 12px;
+        text-align: center;
+        color: #757575;
+        font-family: SimHei;
+        margin-bottom: 29px;
+
+        span {
+            font-weight: 600;
+            color: #ff7900;
+        }
+    }
+
+    .examine {
+        width: 100%;
+        height: 54px;
+
+        a {
+            background: #b26aef url(../images/dealer13.png)25px 12px no-repeat;
+            color: #fff;
+            line-height: 54px;
+            width: 180px;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            text-indent: 35px;
+            font-size: 20px;
+            border-radius: 50px;
+        }
+    }
+}
+
+.BannerSlidePart {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.main_div {
+    overflow: hidden;
+    width: 1061px;
+    float: right;
+}
+/*经销商内容*/
+.dealerDiv {
+    width: 1019px;
+    border: 1px solid #f0f0f0;
+    margin: 0 auto;
+    padding: 20px 20px;
+    overflow: hidden;
+
+    .sharediv {
+        width: 40%;
+        color: #ccc;
+        margin-top: 10px;
+
+        .sharediv_left {
+            display: inline-block;
+            background: url(../images/dealer05.png)0 0 no-repeat;
+            width: 153px;
+            height: 15px;
+            font-size: 12px;
+            color: #6c6c6c;
+            text-indent: 20px;
+        }
+
+        .sharediv_lefts {
+            display: inline-block;
+            background: url(../images/dealer06.png)0 0 no-repeat;
+            width: 153px;
+            height: 15px;
+            font-size: 12px;
+            color: #6c6c6c;
+            text-indent: 20px;
+            margin-left: 25px;
+        }
+    }
+    /*商品信息*/
+    .dealer_Right {
+        width: 600px;
+        overflow: hidden;
+
+        .introduce {
+            display: block;
+            width: 100%;
+            line-height: 33px;
+            font-family: "simsun";
+            word-spacing: 2px;
+            color: #4a4a4a;
+            font-size: 16px;
+            font-weight: 600;
+            text-indent: 10px;
+        }
+
+        .cost_div {
+            width: 100%;
+            font-size: 14px;
+
+            .earnestMoney {
+                float: left;
+                width: 415px;
+                height: 80px;
+                background: #ffdfc2;
+                line-height: 80px;
+                text-indent: 20px;
+                font-family: "simsun";
+
+                span {
+                    float: left;
+                }
+
+                .money {
+                    font-size: 36px;
+                    color: #ff0000;
+                    line-height: 80px;
+                    font-family: "Arial";
+                }
+            }
+
+            .collect {
+                width: 92px;
+                height: 80px;
+                margin-left: 1px;
+                display: inline-block;
+                background: #fff1e4 url(../images/dealer02.png)center 21px no-repeat;
+                text-align: center;
+                line-height: 120px;
+                cursor: pointer;
+
+                &.active {
+                    background-position-y: -71px;
+                }
+
+                a {
+                    color: #4a4a4a;
+                    font-family: "simsun";
+                    font-size: 12px;
+                }
+            }
+
+            .collects {
+                width: 91px;
+                height: 80px;
+                margin-left: 1px;
+                display: inline-block;
+                background: #fff1e4 url(../images/dealer03.png)center 21px no-repeat;
+                text-align: center;
+                line-height: 120px;
+                cursor: pointer;
+
+                a {
+                    color: #4a4a4a;
+                    font-family: "simsun";
+                    font-size: 12px;
+                }
+            }
+
+            .category_div {
+                width: 100%;
+                height: 35px;
+                background: #ff7900;
+                margin-top: 1px;
+                color: #ff4800;
+                font-family: "simsun";
+
+                .dealer_Text {
+                    text-indent: 20px;
+                    width: 179px;
+                    float: left;
+                    color: #fff;
+                    line-height: 35px;
+                }
+
+                .retail {
+                    width: 190px;
+                    line-height: 35px;
+                    float: left;
+                    color: #fff;
+                    text-align: center;
+                }
+
+                .fcl {
+                    width: 227px;
+                    line-height: 35px;
+                    float: left;
+                    color: #fff;
+                    text-align: center;
+                }
+
+                .solid {
+                    width: 1px;
+                    height: 30px;
+                    float: left;
+                    border-right: 1px solid #ff4800;
+                    margin-top: 3px;
+                }
+            }
+        }
+
+        .date_Div {
+            width: 100%;
+            border-bottom: dashed #d2d2d2 1px;
+            position: relative;
+            padding: 10px 0;
+
+            .margin_top {
+                overflow: hidden;
+                padding-top: 16px;
+            }
+
+            .date_Divtext {
+                float: left;
+                line-height: 35px;
+                text-indent: 20px;
+                font-family: "simsun";
+                font-size: 12px;
+                word-spacing: 12px;
+                width: 100%;
+
+                :nth-child(2) {
+                    margin-right: 25px;
+                }
+            }
+
+            .serviceImg {
+                float: right;
+                height: 50%;
+                position: absolute;
+                top: 25px;
+                right: 0;
+                width: 184px;
+
+                > div {
+                    display: none;
+
+                    a {
+                        display: block;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            #serviceImg {
+                float: right;
+                height: 50%;
+                position: absolute;
+                top: 12px;
+                right: 2px;
+                cursor: pointer;
+            }
+
+            .det {
+                display: inline-block;
+            }
+
+            .date_Divtexts {
+                float: left;
+                line-height: 31px;
+                text-indent: 20px;
+                font-family: "simsun";
+                font-size: 12px;
+                word-spacing: 12px;
+                width: 100%;
+
+                .dets {
+                    display: inline-block;
+                    text-indent: 62px;
+                }
+
+                :nth-child(2) {
+                    width: 84px;
+                    margin-right: 25px;
+                    display: inline-block;
+                    text-indent: 0;
+                }
+
+                :nth-child(3) {
+                    margin-right: 12px;
+                }
+            }
+        }
+
+        .borde_color {
+            border: 2px solid #a9a9a9;
+            margin-right: 12px;
+            display: inline-block;
+            width: 56px;
+            height: 21px;
+            text-align: center;
+            line-height: 21px;
+            padding: 0 5px;
+            color: #333;
+            font-family: "SimSun";
+
+            &.active {
+                border-color: #ff7900;
+            }
+        }
+
+        .selectDiv {
+            width: 96%;
+            padding: 23px 22px 27px;
+
+            p {
+                width: 100%;
+                margin-bottom: 20px;
+                height: 25px;
+                overflow: hidden;
+
+                span {
+                    line-height: 21px;
+                    margin-right: 15px;
+                    color: #333;
+                }
+            }
+
+            .lin-hk {
+                width: 100%;
+                height: 31px;
+
+                .font {
+                    color: #000;
+                    ;
+                    font-family: "simsun";
+                }
+
+                .quantity {
+                    height: 31px;
+                    width: 82px;
+                    margin: 0 14px 0 5px;
+
+                    .text {
+                        width: 57px;
+                        height: 29px;
+                        border: 1px solid #a7a6ac;
+                        text-indent: 2px;
+                        background: #fff;
+                    }
+
+                    .buttons {
+                        width: 16px;
+                        height: 12px;
+                        float: right;
+                        border: 1px solid #a7a6ac;
+                        background: #fff;
+                        background: url(../images/dealer10.jpg)center center no-repeat;
+                    }
+
+                    .buttonST {
+                        width: 16px;
+                        height: 12px;
+                        float: right;
+                        margin-top: 7px;
+                        border: 1px solid #a7a6ac;
+                        background: #fff;
+                        background: url(../images/dealer11.jpg)center center no-repeat;
+                    }
+                }
+
+                span {
+                    height: 31px;
+                    line-height: 31px;
+                    float: left;
+                }
+            }
+        }
+
+        .button {
+            width: 418px;
+            height: 61px;
+            margin-left: 20px;
+            overflow: hidden;
+
+            a {
+                width: 200px;
+                height: 61px;
+                float: left;
+                text-align: center;
+                line-height: 61px;
+                background: #ff7900;
+                color: #fff;
+                border-radius: 40px;
+                font-family: "JZunYuan";
+                font-size: 20px;
+            }
+
+            .shoppingCar {
+                background: #ff4747 url(../images/dealer04.png)30px 12px no-repeat;
+                float: right;
+                text-indent: 35px;
+            }
+        }
+    }
+}
+/*商品详情tab*/
+.particularsTab {
+    width: 1061px;
+    margin: 12px auto 0;
+
+    .tab_a {
+        float: left;
+        border: 1px solid #e4e2e3;
+        border-bottom: none;
+
+        .background_Top {
+            color: #fff;
+            background: #ff7100;
+            -webkit-box-shadow: 0px -3px 0px #fd9641;
+        }
+
+        a {
+            width: 264px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px;
+            font-family: SimSun;
+            float: left;
+            color: #4a4a4a;
+            background: #f9f7f8;
+        }
+
+        .bordeLr {
+            border-left: 1px solid #e4e2e3;
+            border-right: 1px solid #e4e2e3;
+        }
+    }
+
+    .show {
+        width: 1059px;
+        overflow: hidden;
+        border: 1px solid #f0f0f0;
+        border-top: 4px solid #ff7100;
+        margin-bottom: 10px;
+
+
+        .particulars1 {
+            width: 100%;
+            font-size: 22px;
+            padding-bottom:30px;
+
+            img {
+                display: block;
+            }
+
+            .marginBor {
+                overflow: hidden;
+                display: block;
+                margin: 16px 16px 34px;
+                width: 100%;
+                letter-spacing: 0;
+                line-height: 0;
+                word-spacing: 0;
+                font-weight: normal;
+            }
+
+            .img_09 {
+                margin-top: 18px;
+            }
+
+            p {
+                letter-spacing: 1px;
+                line-height: 20px;
+                margin-bottom: 29px;
+                word-spacing: 15px;
+            }
+
+            .color {
+                color: #ff0000;
+                margin: 25px 0 31px 0;
+                word-spacing: 0;
+            }
+
+            .excuse {
+                font-size: 14px;
+                color: #4a4a4a;
+                font-family: "SimSun";
+                display: block;
+                font-style: normal;
+                margin-top: 20px;
+                text-indent: 20px;
+            }
+
+            textarea {
+                width: 999px;
+                height: 160px;
+                background-color: #f0f0f0;
+                padding: 10px;
+                border: none;
+                margin: 10px 0 0 20px;
+                ;
+                text-indent: 10px;
+                outline: none;
+                font-size: 14px;
+            }
+
+            .quiz {
+                float: right;
+                width: 94px;
+                height: 30px;
+                background: #ff7100;
+                color: #fff;
+                text-align: center;
+                line-height: 30px;
+                font-size: 14px;
+                font-family: "Simsun";
+                font-weight: 600;
+                margin: 10px 20px;
+            }
+
+            .pleaseLogin {
+                width: 507px;
+                height: 199px;
+                letter-spacing: 0;
+                line-height: 0;
+                margin: -18px auto 0;
+                word-spacing: 0;
+
+                img {
+                    float: left;
+                }
+
+                i {
+                    float: right;
+                    display: block;
+                    margin-top: 58px;
+                    font-size: 18px;
+                    width: 240px;
+                    font-style: normal;
+
+                    span {
+                        color: #4a4a4a;
+                        line-height: 27px;
+
+                        a {
+                            color: #ff7900;
+                            display: inline-block;
+                            border-bottom: 1px solid #ff7900;
+                            width: 52px;
+                            height: 19px;
+                            line-height: 19px;
+                            text-align: center;
+                        }
+                    }
+
+                    .center {
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .particulars {
+                width: 100%;
+                letter-spacing: 0;
+                line-height: 0;
+                margin-bottom: 0;
+                word-spacing: 0;
+                overflow: hidden;
+                border-bottom: 1px dashed #d2d2d2;
+                background: #ededed;
+
+                i {
+                    width: 95%;
+                    margin: 0 auto;
+                    height: 50px;
+                    line-height: 50px;
+                    display: block;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-family: "simsun";
+                    clear: both;
+
+                    .lint {
+                        line-height: 10px;
+                    }
+
+                    .textt {
+                        float: left;
+                        font-weight: 600;
+                    }
+
+                    .texs {
+                        float: left;
+                        font-weight: 100;
+                        width: 820px;
+                    }
+
+                    .textDate {
+                        float: right;
+                    }
+
+                    a {
+                        color: #ff7900;
+                        float: left;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .particular {
+                width: 100%;
+                letter-spacing: 0;
+                line-height: 0;
+                margin-bottom: 0;
+                word-spacing: 0;
+                overflow: hidden;
+                border-bottom: 1px dashed #d2d2d2;
+                background: #fff;
+
+                i {
+                    width: 95%;
+                    margin: 0 auto;
+                    height: 50px;
+                    line-height: 50px;
+                    display: block;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-family: "simsun";
+
+                    .lint {
+                        line-height: 10px;
+                    }
+
+                    .textt {
+                        float: left;
+                        font-weight: 600;
+                    }
+
+                    .texs {
+                        float: left;
+                        font-weight: 100;
+                    }
+
+                    .textDate {
+                        float: right;
+                    }
+
+                    a {
+                        color: #ff7900;
+                        float: left;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .reviewWrap {
+        margin-left: 20px;
+        padding: 30px 0;
+        border-bottom: 1px dashed #f0f0f0;
+
+        .leftHead {
+            display: block;
+            width: 72px;
+
+            > a {
+                display: block;
+                width: 72px;
+                height: 72px;
+                border: 1px solid #f0f0f0;
+                padding: 3px;
+            }
+
+            > p {
+                width: 80px;
+                height: 40px;
+                line-height: 20px;
+                font-family: SimSun;
+                overflow: hidden;
+                font-size: 12px;
+                color: #000;
+                margin-bottom: 0;
+            }
+        }
+
+        .reviewText {
+            margin-left: 25px;
+
+            > p {
+                font-size: 14px;
+                color: #000;
+                letter-spacing: .5px;
+                margin-bottom: 8px;
+            }
+
+            .imgsWrap {
+                .imgs {
+                    float:left;
+                    margin-right:5px;
+                    > a {
+                        display:inline-block;
+                        position: relative;
+                        float: left;
+                        width: 40px;
+                        height: 40px;
+                        padding: 3px;
+                        border: 2px solid #f0f0f0;
+                        margin-left: 8px;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        &:hover,&.active {
+                            border-color: #ff7900;
+                            .trangle{
+                                display:block;
+                            }
+                        }
+
+                        .trangle {
+                            display: none;
+                            position: absolute;
+                            bottom: -9px;
+                            left: 15px;
+                            width: 0;
+                            height: 0;
+                            border-left: 7px solid transparent;
+                            border-right: 7px solid transparent;
+                            border-top: 7px solid #ff7900;
+                        }
+                    }
+
+                    .showBigImgWrap {
+                        display:none;
+                        border: 1px solid #ddd;
+                        width: 500px;
+                        height: 500px;
+                        padding: 5px;
+                        margin-top: 60px;
+                        text-align: center;
+
+                        .rotateImg {
+                            width: 500px;
+                            height: 470px;
+                            text-align:center;
+                            i {
+                                display: inline-block;
+                                width: 1px;
+                                height: 100%;
+                                vertical-align: middle;
+                            }
+
+                            img {
+                                display: unset;
+                                vertical-align: middle;
+                                margin-left: -1px;
+                                max-width:400px;
+                                max-height:400px;
+                            }
+                        }
+
+                        .topHandel {
+                            text-align: left;
+                            margin-bottom: 5px;
+
+                            > a {
+                                display: inline-block;
+                                text-align: left;
+                                font-size: 12px;
+                                color: #666;
+                                margin-left: 5px;
+
+                                > img {
+                                    display: unset;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .proDate {
+            font-family: SimSun;
+            color: #b0b0b0;
+            font-size: 12px;
+            padding-top: 10px;
+        }
+    }
+}
+/*现货*/
+.date_Divs {
+    height: 15px;
+    width: 100%;
+    border-bottom: dashed #d2d2d2 1px;
+}
+
+.dealers_Texts {
+    text-indent: 70px;
+    width: 100%;
+    float: left;
+    color: #fff;
+    line-height: 35px;
+    background: url(../images/dealer14.png)20px center no-repeat;
+    font-size: 14px;
+}
+
+.selectDivs {
+    width: 96%;
+    height: 180px;
+    padding: 23px 22px 50px;
+
+    .width_Collss {
+        width: 520px;
+        margin-left: 10px;
+    }
+
+    p {
+        width: 100%;
+        margin-bottom: 20px;
+
+        span {
+            height: 21px;
+            line-height: 21px;
+        }
+    }
+
+    .lin-hk {
+        width: 100%;
+        height: 31px;
+
+        .quantity {
+            height: 31px;
+            width: 82px;
+            margin: 0 14px 0 15px;
+
+            .text {
+                width: 57px;
+                height: 29px;
+                border: 1px solid #a7a6ac;
+                text-indent: 2px;
+                background: #fff;
+            }
+
+            .buttons {
+                width: 16px;
+                height: 12px;
+                float: right;
+                border: 1px solid #a7a6ac;
+                background: #fff;
+                background: url(../images/dealer10.jpg)center center no-repeat;
+            }
+
+            .buttonST {
+                width: 16px;
+                height: 12px;
+                float: right;
+                margin-top: 7px;
+                border: 1px solid #a7a6ac;
+                background: #fff;
+                background: url(../images/dealer11.jpg)center center no-repeat;
+            }
+        }
+
+        span {
+            height: 31px;
+            line-height: 31px;
+            float: left;
+        }
+    }
+}
+
+.selectDiv {
+    width: 96%;
+    padding: 23px 22px 27px;
+
+    .width_Collss {
+        width: 520px;
+    }
+
+    p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .lin-hk {
+        width: 100%;
+        height: 31px;
+
+        .quantity {
+            height: 31px;
+            width: 82px;
+            margin: 0 14px 0 5px;
+
+            .text {
+                width: 57px;
+                height: 29px;
+                border: 1px solid #a7a6ac;
+                text-indent: 2px;
+                background: #fff;
+            }
+
+            .buttons {
+                width: 16px;
+                height: 12px;
+                float: right;
+                border: 1px solid #a7a6ac;
+                background: #fff;
+                background: url(../images/dealer10.jpg)center center no-repeat;
+            }
+
+            .buttonST {
+                width: 16px;
+                height: 12px;
+                float: right;
+                margin-top: 7px;
+                border: 1px solid #a7a6ac;
+                background: #fff;
+                background: url(../images/dealer11.jpg)center center no-repeat;
+            }
+        }
+
+        span {
+            height: 31px;
+            line-height: 31px;
+            float: left;
+        }
+    }
+}
+/*搜索页面*/
+.search {
+    width: 100%;
+    overflow: hidden;
+    font-family: "SimSun";
+
+    .searchShow {
+        width: 100%;
+        height: 40px;
+        background: #f0f0f0;
+
+        .searchShow_text {
+            width: 85px;
+            line-height: 40px;
+            text-align: center;
+            float: left;
+        }
+
+        .searchShow_right {
+            line-height: 40px;
+            width: 942px;
+            float: right;
+
+            .searchDom {
+                float: left;
+                clear: both;
+                display: inline-block;
+            }
+
+            .text_Show {
+                float: left;
+                font-size: 12px;
+                color: #ff7900;
+                line-height: 25px;
+                height: 25px;
+                background: #fff;
+                margin: 7px 5px 0 0;
+                border: 1px solid #d8d8d8;
+                padding: 0 4px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                .textD {
+                    color: #ff7900;
+                    padding-right: 3px;
+
+                    &.active {
+                        color: #838383;
+                    }
+                }
+
+                .divD {
+                    width: 15px;
+                    height: 15px;
+                    display: inline-block;
+                    margin: -4px 0;
+                    background: #fff url(../images/search04.png) center center no-repeat;
+                }
+            }
+
+            .text_Remove {
+                float: left;
+                font-size: 12px;
+                color: #fff;
+                line-height: 25px;
+                text-indent: 5px;
+                height: 25px;
+                background: #b0aba9;
+                border: 1px solid #d8d8d8;
+                margin-top: 7px;
+                overflow: hidden;
+                min-width: 81px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                .textR {
+                    color: #fff;
+                }
+
+                .divDmove {
+                    width: 15px;
+                    height: 15px;
+                    display: inline-block;
+                    margin: -4px 0 -4px 2px;
+                    background: #fff url(../images/search03.png) center center no-repeat !important;
+                }
+            }
+        }
+    }
+
+    .search_height {
+        width: 100%;
+        line-height: 47px;
+        border-bottom: 1px dashed #d2d2d2;
+
+        .btn {
+            color: #000;
+            background: url(../images/search02.png) 30px -23px no-repeat;
+            width: 40px;
+            float: right;
+            font-style: normal;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &.active {
+                background-position-y: 19px;
+            }
+        }
+
+        .searchShow_texts {
+            width: 85px;
+            line-height: 47px;
+            text-align: center;
+            float: left;
+            margin-right: 35px;
+        }
+
+        .search_heightA {
+            float: left;
+            font-size: 12px;
+            position: relative;
+            overflow: hidden;
+            max-height: 190px;
+
+            .heightA_height {
+                height: 47px;
+            }
+
+            a {
+                color: #838383;
+                width: 83px;
+                display: inline-block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                &:active {
+                    color: #ff7900;
+                }
+            }
+        }
+
+        .search_heightAs {
+            float: left;
+            font-size: 12px;
+            height: 190px;
+            display: none;
+            overflow: hidden;
+            position: relative;
+            background: #fff;
+
+            .heightA_height {
+                height: 47px;
+                border-top: 1px dashed #d2d2d2;
+
+                &:first-child {
+                    border-top: none;
+                }
+            }
+
+            a {
+                color: #838383;
+                width: 83px;
+                display: inline-block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                &:active {
+                    color: #ff7900;
+                }
+            }
+        }
+
+        .search_heightB {
+            float: right;
+            font-size: 12px;
+            width: 940px;
+            height: 47px;
+
+            a {
+                color: #838383;
+                width: 80px;
+                display: inline-block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                &:active {
+                    color: #ff7900;
+                }
+            }
+        }
+    }
+
+    .btnDiv {
+        width: 100%;
+        height: 30px;
+        background: #757575;
+        margin-top: 10px;
+        float: left;
+
+        a {
+            float: left;
+            width: 48px;
+            height: 18px;
+            color: #fff;
+            text-align: center;
+            border: 1px solid #363636;
+            background: #4a4a4a;
+            margin: 5px 0 0 11px;
+            font-family: "SimSun";
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .background_boder {
+            border: 1px solid #fff;
+            background: #ff7900;
+        }
+
+        .background_boders {
+            border: 1px solid #363636;
+            background: #4a4a4a;
+        }
+
+        .shift {
+            text-indent: -10px;
+            position: relative;
+            float: left;
+            width: 48px;
+            height: 18px;
+            color: #fff;
+            text-align: center;
+            border: 1px solid #363636;
+            background: #4a4a4a;
+            margin: 5px 0 0 11px;
+            font-family: "SimSun";
+            font-size: 12px;
+            line-height: 18px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .popsh {
+                position: absolute;
+                top: 0;
+                left: 33px;
+                border: 4px solid transparent;
+                border-bottom-color: #fff;
+                width: 0;
+                height: 0;
+
+                &.borderBottom {
+                    border-bottom: 6px #ff7900 solid;
+                }
+            }
+
+            .popshTwo {
+                position: absolute;
+                top: 10px;
+                left: 33px;
+                border: 4px solid transparent;
+                border-top-color: #fff;
+                width: 0;
+                height: 0;
+
+                &.borderTop {
+                    border-top: 6px #ff7900 solid;
+                }
+            }
+
+            .pops {
+                position: absolute;
+                top: -4px;
+                left: 33px;
+                border: 6px solid transparent;
+                border-bottom-color: #fff;
+                width: 0;
+                height: 0;
+            }
+
+            .popsTwo {
+                position: absolute;
+                top: 10px;
+                left: 33px;
+                border: 6px solid transparent;
+                border-top-color: #fff;
+                width: 0;
+                height: 0;
+            }
+        }
+
+        .quantity {
+            float: right;
+            padding: 0 23px;
+            line-height: 20px;
+            background: #fff;
+            font-family: "SimSun";
+            font-size: 12px;
+            color: #4a4a4a;
+            margin: 5px 6px 0 0;
+            border-radius: 50px;
+        }
+    }
+
+    .search_Tab {
+        overflow: hidden;
+        float: left;
+
+        div {
+            display: none;
+            overflow: hidden;
+        }
+
+        .hotLodoLiest {
+            display: block;
+        }
+    }
+}
+

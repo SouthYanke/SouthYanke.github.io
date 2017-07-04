@@ -1,0 +1,31 @@
+﻿/**********公用的CSS函数*********/
+//公共变量
+@whiteColor:#fff;
+@btnColor:#ff7900;
+@maxWidth:1338px;
+@border: 1px solid #ccc;
+@song:'\5b8b\4f53';
+//圆角按钮
+.ShowRound(@radius:10px){
+    -moz-border-radius: @radius; 
+    -webkit-border-radius: @radius; 
+    border-radius: @radius; 
+}
+.GrayBar(@width:1338px,@height:35px){
+    width:@width;
+    height:@height;
+    background-color:#e3e3e3;
+}
+/*橙色按钮*/
+.ShowOrangeBtn(@width:50px,@height:20px,@font:12px){
+    position:relative;
+    display:block;
+    width:@width;
+    height:@height;
+    line-height:@height;
+    background-color:@btnColor;
+    color:@whiteColor;
+    font-size:@font;
+    text-align:center;
+    .ShowRound(@height/2); 
+}

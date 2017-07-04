@@ -1,0 +1,1186 @@
+﻿@import "function.less";
+
+.frame(@w: 198px,@h: 118px) {
+    width: @w;
+    height: @h;
+    border: @border;
+    cursor: pointer;
+
+    &.on {
+        border: 1px solid #ffcc7d;
+        background: url(../images/sym.png) no-repeat right bottom;
+    }
+
+    &:hover {
+        border: 1px solid #ffcc7d;
+    }
+}
+/*流程间距*/
+.marginTop20 {
+    margin-top: 20px;
+}
+/*购物表头文字*/
+.showHeadWord(@width: 180px) {
+    display: block;
+    width: @width;
+    height: 15px;
+    line-height: 15px;
+    margin: 10px auto;
+    font-family: @song;
+    text-align: center;
+}
+
+/*表头*/
+.cartHead {
+    position: relative;
+    .GrayBar(1338px,35px);
+
+    .head01 {
+        .showHeadWord(380px);
+    }
+
+    .head02 {
+        .showHeadWord(350px);
+    }
+
+    .head03 {
+        .showHeadWord(110px);
+    }
+
+    .head04 {
+        .showHeadWord(160px);
+    }
+
+    .head05 {
+        .showHeadWord(140px);
+    }
+
+    .head06 {
+        .showHeadWord(180px);
+    }
+}
+
+input[type=checkbox] {
+    width: 13px;
+    height: 13px;
+}
+/*商品信息*/
+.itemInfo {
+    position: relative;
+    width: 1338px;
+    height: auto;
+
+    .oneItem {
+        position: relative;
+        width: 1338px;
+        height: 108px;
+        border-bottom: @border;
+        color: #000;
+        font-family: @song;
+
+        &:first-child {
+            border-top: @border;
+        }
+
+        .check {
+            margin-left: 24px;
+            margin-top: 48px;
+        }
+
+        .img {
+            display: block;
+            margin-left: 12px;
+            margin-top: 13px;
+            width: 80px;
+            height: 80px;
+            border: @border;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .itemName {
+            display: block;
+            margin-top: 14px;
+            margin-left: 14px;
+            margin-right: 15px;
+            width: 220px;
+            height: 82px;
+            line-height: 15px;
+            overflow: hidden;
+        }
+
+        .itemQuality {
+            position: relative;
+            display: block;
+            margin-top: 13px;
+            width: 350px;
+            height: 84px;
+            line-height: 25px;
+            text-align: center;
+
+            .oneQuality {
+                position: relative;
+                display: block;
+                width: 175px;
+                margin-bottom: 3px;
+
+                .quaName {
+                    margin-left: 0;
+                    width: 72px;
+                    height: 25px;
+                    line-height: 25px;
+                    text-align: right;
+                    overflow: hidden;
+                }
+
+                .styledSelect {
+                    position: relative;
+                    width: 102px;
+                    height: 25px;
+
+                    .colorSelect {
+                        position: relative;
+                        display: block;
+                        width: 65px;
+                        height: 24px;
+                        border: 1px solid #e5e5e5;
+                        font-family: SimSun;
+                        text-align: left;
+                        padding-left: 5px;
+                        padding-right: 25px;
+
+                        img {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .itemPrice {
+            display: block;
+            margin-top: 14px;
+            width: 105px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            font-family:Arial;
+            > input {
+                display:inline-block;
+                color: #fff;
+                width: 60px;
+                height:20px;
+                line-height:20px;
+                text-align: center;
+                border-radius: 8px;
+                outline:none;
+                font-family:SimSun;
+                font-size:12px;
+
+                &.yushou {
+                    border: 1px solid #1a9bcb;
+                    background-color: #1a9bcb;
+                }
+
+                &.xianhuo {
+                    border: 1px solid #00a900;
+                    background-color: #00a900;
+                }
+            }
+        }
+
+        .itemNum {
+            display: block;
+            position: relative;
+            margin-top: 14px;
+            width: 95px;
+            height: 25px;
+            font-family:Arial;
+
+            .changeNums {
+                display: block;
+                position: relative;
+                width: 77px;
+                height: 25px;
+                margin: 0 auto;
+
+                .btn() {
+                    display: block;
+                    width: 17px;
+                    height: 23px;
+                    line-height: 25px;
+                    border: 1px solid #e5e5e5;
+                    text-align: center;
+                    background-color: #f0f0f0;
+                }
+
+                .minus {
+                    .btn();
+                    border-right: none;
+                }
+
+                .add {
+                    .btn();
+                    border-left: none;
+                }
+
+                input[type=text] {
+                    width: 37px;
+                    height: 21px;
+                    line-height: 21px;
+                    text-align: center;
+                    outline-style: none;
+                    font-family: @song;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .itemTotal {
+            display: block;
+            margin-top: 14px;
+            width: 103px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            color: #ff7900;
+            font-weight: bold;
+            font-size: 12px;
+            font-family:Arial;
+        }
+
+        .itemOperate {
+            display: block;
+            margin-left: 15px;
+            margin-top: 14px;
+            width: 130px;
+            height: 82px;
+
+            a {
+                display: block;
+                width: 100%;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+.choiceColorWrap {
+    display: none;
+    position: absolute;
+    top: -4px;
+    width: 310px;
+    left: 36px;
+    border: 1px dashed #ff7900;
+    background-color: #fff;
+    z-index: 20;
+
+    .colorTop {
+        padding-bottom: 20px;
+
+        > img {
+            position: absolute;
+            right: -1px;
+            top: -1px;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 12px;
+            color: #000;
+            font-family: SimSun;
+            text-align: left;
+            margin-left: 10px;
+            line-height: 28px;
+        }
+    }
+
+    .colorImgShow {
+        position: absolute;
+        width: 375px;
+        border: 1px solid #e5e5e5;
+        padding: 12px 8px;
+        background-color: #fff;
+        left: -1px;
+
+        .clickTopImg {
+            position: absolute;
+            top: -13px;
+            left: 20px;
+        }
+
+        .imgLeft {
+            width: 200px;
+
+            .colors {
+                margin-bottom: 11px;
+
+                > span {
+                    display: block;
+                    width: 40px;
+                    text-align:left;
+                }
+
+                .options {
+                    width: 150px;
+
+                    a {
+                        float: left;
+                        display: block;
+                        height: 20px;
+                        line-height: 20px;
+                        border: 1px solid #e5e5e5;
+                        font-family: SimSun;
+                        color: #000;
+                        padding: 0 3px;
+                        margin-left: 10px;
+                        margin-bottom: 8px;
+                        max-width:140px;
+                        overflow:hidden;
+
+                        &:hover, &.on {
+                            border-color: #ff7900;
+                        }
+                    }
+                }
+            }
+
+            .setBtns {
+                text-align: right;
+                position: absolute;
+                bottom: 10px;
+                right: 185px;
+
+                a {
+                    display: inline-block;
+                    width: 50px;
+                    height: 22px;
+                    line-height: 22px;
+                    font-family: SimSun;
+                    color: #666;
+                    text-align: center;
+                    border-radius: 4px;
+
+                    &:hover, &.on {
+                        background-color: #ff7900;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .imgRight {
+            border-left: 1px solid #e5e5e5;
+
+            img {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+/*购物车底部*/
+.cartFoot {
+    position: relative;
+    margin-top: 23px;
+    margin-bottom: 20px;
+    .GrayBar(1300px,51px);
+    font-family: @song;
+
+    .checkAll {
+        margin-left: 24px;
+        margin-top: 20px;
+    }
+
+    label {
+        margin-left: 7px;
+        margin-top: 18px;
+        cursor: pointer;
+    }
+
+    .linkWord {
+        display: block;
+        margin-top: 18px;
+        height: 16px;
+        line-height: 16px;
+        margin-left: 30px;
+    }
+
+    .showWord {
+        display: block;
+        position: relative;
+        margin-left: 450px;
+        margin-top: 18px;
+
+        .allNum {
+            margin: 0 2px;
+            color: #ff0000;
+            font-weight: 700;
+        }
+    }
+
+    .showTotal {
+        margin: 9px 2px;
+        font-size: 24px;
+        color: #ff0000;
+        font-family:Arial;
+
+        .totalMoney {
+            padding-left: 1px;
+        }
+    }
+
+    .affirmBtn {
+        .ShowOrangeBtn(202px,51px,20px);
+        margin-right: -38px;
+        font-weight: bold;
+    }
+}
+/*确认订单信息*/
+.orderHead {
+    position: relative;
+    .GrayBar(1338px,35px);
+
+    .word {
+        display: block;
+        height: 15px;
+        line-height: 15px;
+        margin-top: 10px;
+        margin-left: 24px;
+        font-family: @song;
+        font-weight: bold;
+        color: #000;
+    }
+}
+/*订单主体部分*/
+.orderMain {
+    position: relative;
+    width: 1336px;
+    height: auto;
+    border: 1px solid #e3e3e3;
+    border-top: none;
+    margin-bottom: 41px;
+
+    .mainPart {
+        position: relative;
+        width: 1290px;
+        height: auto;
+        margin: auto 24px;
+
+        .titlePart {
+            display: block;
+            position: relative;
+            height: 44px;
+            line-height: 44px;
+            font-family: @song;
+            color: #000;
+            font-weight: bold;
+
+            &.half {
+                width: 50%;
+                height: 42px;
+                line-height: 42px;
+            }
+
+            &.addressHeight {
+                height: 48px;
+                line-height: 48px;
+            }
+        }
+
+        .contPart {
+            position: relative;
+            width: 100%;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e3e3e3;
+
+            .addPart {
+                position: relative;
+                width: 1110px;
+                height: 120px;
+                overflow: hidden;
+            }
+
+            .operatePart {
+                position: relative;
+                width: 85px;
+                height: 120px;
+
+                span {
+                    display: block;
+                    width: 83px;
+                    height: 28px;
+                    border: 1px solid #999;
+                    line-height: 30px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+
+            .ticketPart {
+                position: relative;
+
+                tr {
+                    line-height: 30px;
+
+                    td {
+                        padding-left: 16px;
+
+                        &:first-child {
+                            padding-left: 0;
+                        }
+
+                        &.money {
+                            color: #ff0000;
+                        }
+                    }
+                }
+            }
+
+            &.addPadBottom {
+                padding-bottom: 26px;
+            }
+        }
+
+        .contHalf {
+            position: relative;
+            width: 50%;
+            padding-bottom: 20px;
+
+            input[type=text] {
+                width: 594px;
+                height: 26px;
+                line-height: 30px;
+                text-indent: 5px;
+                outline-style: none;
+                font-family: SimSun;
+                color: #ccc;
+                font-size: 12px;
+                border:1px solid #ccc;
+            }
+
+            .way {
+                line-height: 30px;
+            }
+        }
+
+        .paddingPart {
+            width: 93.6%;
+            padding: 22px 40px;
+            border-top: 1px solid #e3e3e3;
+
+            .affirmBtn {
+                .ShowOrangeBtn(202px,51px,20px);
+            }
+
+            .totalAllPart {
+                position: relative;
+                display: block;
+                width: 200px;
+                height: 51px;
+                line-height: 51px;
+                text-align: right;
+                margin-right: 24px;
+                font-family:SimSun;
+                font-size:14px;
+
+                .moneyp {
+                    display: inline-table;
+                    position: relative;
+                    color: #ff0000;
+                    font-size: 24px;
+                   font-family:Arial;
+
+                    label {
+                        display: inline-table;
+                        text-indent: 5px;
+                        font-family:Arial;
+                    }
+                }
+            }
+
+            &.details {
+                padding: 14px 40px;
+                font-family: @song;
+
+                .showDetails {
+                    position: relative;
+                    display: block;
+
+                    tr {
+                        line-height: 36px;
+
+                        td {
+                            text-indent: 5px;
+                            color: #ff0000;
+                            font-weight: bold;
+                            font-family:Arial;
+
+                            span {
+                                margin: 0 2px;
+                                font-size: 14px;
+                            }
+
+                            &:first-child {
+                                text-align: right;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*地址*/
+.oneAddress {
+    position: relative;
+    display: block;
+    .frame(198px,118px);
+    margin-right: 22px;
+
+    p {
+        display: block;
+        position: relative;
+        width: 180px;
+        min-height: 18px;
+        margin: 0 auto;
+        line-height: 18px;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+
+        .name {
+            position: relative;
+            color: #000;
+            font-weight: bold;
+        }
+    }
+
+    .tag {
+        margin-top: 3px;
+        color: #ccc;
+    }
+
+    .address {
+        margin-top: 5px;
+    }
+
+    .phone {
+        margin-top: 5px;
+    }
+}
+/*优惠劵*/
+.useTicket {
+    position: relative;
+    margin-top: 3px;
+    width: 400px;
+    height: 30px;
+
+    input[type=text] {
+        width: 296px;
+        height: 26px;
+        line-height: 30px;
+        text-indent: 5px;
+        outline-style: none;
+        font-family: SimSun;
+        color: #ccc;
+        font-size: 12px;
+        border:1px solid #ccc;
+    }
+
+    .useBtn {
+        .ShowOrangeBtn(86px,30px,12px);
+        margin-left: 12px;
+    }
+}
+/*收货时间*/
+.oneDateTime {
+    position: relative;
+    display: block;
+    .frame(303px,75px);
+    margin-left: 23px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    p {
+        position: relative;
+        display: table-cell;
+        width: 303px;
+        height: 75px;
+        max-height: 75px;
+        margin: auto 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+/*商品信息*/
+.itemHeadBar {
+    position: relative;
+    .GrayBar(1290px,36px);
+
+    .head01 {
+        .showHeadWord(390px);
+    }
+
+    .head02 {
+        .showHeadWord(370px);
+    }
+
+    .head03 {
+        .showHeadWord(180px);
+    }
+
+    .head04 {
+        .showHeadWord(176px);
+    }
+
+    .head05 {
+        .showHeadWord(172px);
+    }
+}
+/*填写订单商品信息*/
+.affirmItemInfo {
+    position: relative;
+    width: 1290px;
+    height: auto;
+
+    .oneItem {
+        position: relative;
+        width: 1290px;
+        height: 108px;
+        overflow: hidden;
+        border-top: @border;
+        color: #000;
+        font-family: @song;
+
+        .img {
+            display: block;
+            margin-left: 30px;
+            margin-top: 13px;
+            width: 80px;
+            height: 80px;
+            border: 1px solid #eee;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .showSpan(@w: 180px) {
+            display: block;
+            position: relative;
+            margin-top: 14px;
+            width: @w;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .itemName {
+            display: block;
+            position: relative;
+            margin-top: 14px;
+            margin-left: 14px;
+            margin-right: 15px;
+            width: 205px;
+            height: 82px;
+            line-height: 18px;
+            overflow: hidden;
+        }
+
+        .itemQuality {
+            .showSpan(370px);
+            height: 84px;
+            margin-top: 13px;
+            line-height: 25px;
+            overflow: hidden;
+            margin-left: 45px;
+
+            .quaName {
+                position: relative;
+                display: block;
+                width: 140px;
+                height: 25px;
+                line-height: 25px;
+                margin-left: 20px;
+                margin-bottom: 3px;
+                overflow: hidden;
+
+                span {
+                    position: relative;
+                    display: block;
+                    float: left;
+                    width: 60px;
+                    height: 25px;
+                    line-height: 25px;
+                    text-align: right;
+                }
+
+                label {
+                    position: relative;
+                    display: block;
+                    float: left;
+                    width: 70px;
+                    height: 25px;
+                    line-height: 25px;
+                    margin-left: 10px;
+                    text-align: left;
+                }
+            }
+        }
+
+        .itemPrice {
+            .showSpan(180px);
+            font-weight: bold;
+            font-family:Arial
+        }
+
+        .itemNum {
+            .showSpan(176px);
+        }
+
+        .itemTotal {
+            .showSpan(172px);
+            color: #ff7900;
+            font-weight: bold;
+            font-family:Arial;
+        }
+    }
+}
+/*购物车图文部分*/
+.imageText {
+    position: relative;
+    width: 1338px;
+    height: auto;
+    margin: 70px auto 175px auto;
+    text-align: center;
+
+    &.failure {
+        margin-top: 105px;
+
+        img {
+            margin-bottom: 0;
+        }
+    }
+
+    &.paySucc {
+        margin: 51px auto 74px auto;
+
+        .linkWord {
+            margin: 24px auto;
+        }
+    }
+
+    &.special {
+        margin: 40px auto 20px auto;
+
+        img {
+            margin: 0 auto;
+        }
+
+        .bigWord {
+            margin: 0 auto;
+            background: url(../images/subSucc.png) 410px center no-repeat;
+        }
+    }
+
+    .bigWord.emptyWord {
+        background: none;
+    }
+
+    .bigWord.succWord {
+        background: url(../images/subSucc.png) 400px center no-repeat;
+    }
+
+    img {
+        margin: 5px auto;
+    }
+
+    .bigWord {
+        display: block;
+        height: 40px;
+        margin: 8px auto;
+        font-size: 30px;
+        color: #ff7900;
+        background: url(../images/subError.png) 435px center no-repeat;
+    }
+
+    .linkWord {
+        display: block;
+        height: 26px;
+        line-height: 26px;
+        margin: 10px auto;
+        text-align: center;
+        font-family: @song;
+        font-size: 14px;
+
+        a {
+            color: #656565;
+            text-decoration: underline;
+
+            &:first-child {
+                margin-right: 40px;
+            }
+        }
+    }
+}
+/*选择支付方式*/
+.payWay {
+    position: relative;
+    margin-bottom: 36px;
+
+    .titleBar {
+        position: relative;
+        display: block;
+        .GrayBar(1338px,35px);
+        line-height: 35px;
+        font-weight: bold;
+        font-family: @song;
+        text-indent: 22px;
+    }
+
+    .contPay {
+        position: relative;
+        padding: 52px 22px;
+        border:1px solid #e3e3e3;
+        border-top: none;
+
+        .payBtn {
+            .ShowOrangeBtn(202px,51px,20px);
+            margin-right: 18px;
+        }
+
+        .onePay {
+            position: relative;
+            display: block;
+            width: auto;
+            height: 50px;
+            cursor: pointer;
+
+            input[type=radio] {
+                width: 13px;
+                height: 13px;
+                margin: 19px auto;
+            }
+
+            &.alipay {
+                margin-left: 0;
+            }
+
+            &.weChat {
+                margin-left: 100px;
+            }
+        }
+    }
+}
+/*添加新地址弹窗*/
+.newAddrPop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/blackBg.png) left top repeat;
+    z-index: 500;
+    overflow: hidden;
+}
+
+.newAddrWrap, .ivericeWrap {
+    width: 853px;
+    position: fixed;
+    left: 50%;
+    top: 70px;
+    margin-left: -427px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.newAddrWrap .title, .ivericeWrap .title {
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    padding: 13px 15px 12px 15px;
+}
+
+.addAddrTable {
+    margin-left: 160px;
+    margin-top: 49px;
+    font-size: 12px;
+
+    .redStar {
+        color: #ff0000;
+        margin-right: 5px;
+    }
+
+    label.error {
+        left: 440px;
+        top: 10px;
+        color: #ff0000;
+        font-family: SimSun;
+        padding-left: 10px;
+    }
+
+    tr td {
+        position: relative;
+        padding: 8px 0;
+
+        &:first-child {
+            text-align: right;
+            padding-right: 10px;
+        }
+    }
+
+    .addrSameInput {
+        width: 160px;
+        padding-left: 10px;
+        padding-right: 5px;
+        height: 23px;
+        line-height: 23px;
+        font-size: 12px;
+        border: 1px solid #cbcbcb;
+    }
+
+    .detaileAddr {
+        width: 410px;
+        height: 23px;
+        line-height: 23px;
+        font-size: 12px;
+        padding-left: 10px;
+        padding-right: 5px;
+        border: 1px solid #cbcbcb;
+    }
+
+    select {
+        width: 139px;
+        height: 24px;
+        line-height: 24px;
+        border: 1px solid #cbcbcb;
+    }
+}
+
+.addrSubmitBtns {
+    width: 300px;
+    margin: 60px auto 110px auto;
+
+    input, a {
+        width: 107px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #e9731b;
+        color: #e9731b;
+        text-align: center;
+        font-size: 14px;
+        background-color: #fff;
+        margin-right: 35px;
+    }
+
+    a {
+        display: block;
+        float: left;
+    }
+
+    input[type=submit], a:first-child {
+        background-color: #e9731b;
+        color: #fff;
+    }
+}
+/*更多地址弹窗*/
+.moreAddrWrap {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/blackBg.png) left top repeat;
+    z-index: 200;
+
+    .choiceAddrWrap {
+        width: 660px;
+        background-color: #fff;
+        position: fixed;
+        top: 15px;
+        left: 50%;
+        margin-left: -330px;
+        overflow: hidden;
+
+        .title {
+            height: 53px;
+            line-height: 53px;
+            font-size: 20px;
+            border-bottom: 1px solid #ccc;
+            padding: 0 20px;
+
+            img {
+                margin-top: 16.5px;
+                cursor: pointer;
+            }
+        }
+
+        .addressList {
+            height: 490px;
+            overflow-y: scroll;
+            margin-top: 60px;
+        }
+
+        .addrContent {
+            width: 540px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 13px 0 14px 30px;
+            margin-bottom: 14px;
+
+            &.on {
+                border-color: #ffcc7d;
+                background: url(../images/sym.png) right bottom no-repeat;
+            }
+
+            .name {
+                font-size: 12px;
+
+                span {
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                padding: 8px 0;
+            }
+
+            .tellNum {
+                font-size: 14px;
+                color: #666;
+            }
+        }
+
+        .sure {
+            display: block;
+            width: 107px;
+            height: 39px;
+            line-height: 39px;
+            background-color: #ff7900;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            margin: 34px auto 64px auto;
+        }
+    }
+}

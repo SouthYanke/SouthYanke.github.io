@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>注册页面- MOEHOT</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link href="../../css/login.css" rel="stylesheet" />
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="wrap loginWrap">
+        <div class="head">
+            <!-- 注册条 -->
+            <div class="headBar">
+                <div class="sameWidth forLogoPosition">
+                    <a href="http://121.40.102.225:6060/aimonPage/" class="slogo fleft"><img src="../../images/slogo.png" width="139" height="41" /></a>
+                    <div class="barElse clear">
+                        <div class="welcom fleft">
+                            欢迎来到萌热商城
+                            <a href="/aimonPage/html/login/login.html">[请登录]</a>
+                            <a href="/aimonPage/html/login/regist.html">[免费注册]</a>
+                        </div>
+                        <div class="headLinks fleft">
+                            <a href="/aimonPage/html/personalCenter/personalInfo.html">用户中心</a>
+                            <a href="/aimonPage/html/personalCenter/myMessage.html">我的消息</a>
+                            <a href="/aimonPage/html/personalCenter/myCollect.html">我的收藏</a>
+                            <a href="/aimonPage/html/helpCenter/helpCenter.html">帮助中心</a>
+                            <a href="javascript:void(0);">收藏本站</a>
+                        </div>
+                        <a href="javascript:void(0);" class="forPhone fleft">
+                            <img src="../../images/gotoPhoneDownLoad.png" width="152" height="45" />
+                            <p class="erweimaImgs">
+                                <img src="../../images/erwema.png" width="152" height="152" />
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- //head -->
+        <div class="main loginMain">
+            <div class="topBg"></div>
+            <div class="registMain">
+                <div class="registTopNotice">
+                    <div class="loginImgWrap">
+                        <img src="../../images/userTopBg.png" width="465" height="53" />
+                        <p>如果您已经是萌热用户，请点击<a href="/aimonPage/html/login/login.html">登录</a></p>
+                    </div>
+                </div>
+                <div class="registchoiceMain">
+                    <div class="sameWidth clearfix">
+                        <div class="registText fleft">
+                            <img src="../../images/leftTop.png" width="290" height="64" />
+                            <p class="noticeRegist">如果您还不是萌热会员，就赶紧注册吧！</p>
+                            <div class="registNotice">
+                                <p>注册萌热会员能够享受以下特权：</p>
+                                <p><span>1</span>官方正版的购物体验</p>
+                                <p><span>2</span>一站式的二次元购物</p>
+                                <p><span>3</span>多种优惠活动惊喜连连</p>
+                                <p><span>4</span>限定、预约商品与日本同步</p>
+                            </div>
+                        </div>
+                        <div class="registSelect fleft">
+                            <!-- 注册入口-->
+                            <div class="registInner">
+                                <a href="javascript:void(0);" class="userRegist"><img src="../../images/normailUser.png" width="348" height="353" /></a>
+                                <a href="javascript:void(0);" class="saleRegist"><img src="../../images/saleUser.png" width="348" height="353" /></a>
+                            </div>
+                            <!-- 用户注册入口-->
+                            <div class="userInner">
+                                <form id="userForm">
+                                    <table class="userTable">
+                                        <tr>
+                                            <td>
+                                                <p>手机号</p>
+                                                <input type="text" class="registInput borderColor" name="userPhone" />
+                                            </td>
+                                            <td>
+                                                <p>密码</p>
+                                                <input type="password" class="registInput borderColor" name="userPwd" id="userPwd" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>验证码</p>
+                                                <div class="clearfix">
+                                                    <input type="text" class="code borderColor fleft" name="userCode" />
+                                                    <div class="codeImg fleft">
+                                                        <img src="../../images/code.png" width="80" height="24" />
+                                                        <a href="javascript:void(0);">换一张</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>确认密码</p>
+                                                <input type="password" class="registInput borderColor" name="userRePwd" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>短信验证码</p>
+                                                <input type="text" class="messageCode borderColor" name="userMessage" />
+                                                <input type="button" id="getCode" class="codeBtn borderColor" value="获取短信验证码" />
+                                            </td>
+                                            <td>
+                                                <label class="userDeal"><input type="checkbox" />我已阅读并同意<a href="javascript:void(0);">《艾漫用户注册协议》</a></label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <input type="submit" value="注册萌热" class="userRegistBtn" />
+                                </form>
+                            </div>
+                            <!-- 经销商入口-->
+                            <div class="saleInner">
+                                <form id="salerForm">
+                                    <table class="userTable">
+                                        <tr>
+                                            <td>
+                                                <p>用户名</p>
+                                                <input type="text" class="registInput borderColor" name="saleUsername" />
+                                            </td>
+                                            <td>
+                                                <p>密码</p>
+                                                <input type="password" class="registInput borderColor" name="salePWD" id="salePWD" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>手机号</p>
+                                                <input type="text" class="registInput borderColor" name="salePhone" />
+                                            </td>
+                                            <td>
+                                                <p>确认密码</p>
+                                                <input type="password" class="registInput borderColor" name="saleSurePWD" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>验证码</p>
+                                                <div class="clearfix">
+                                                    <input type="text" class="code borderColor fleft" name="saleCode" />
+                                                    <div class="codeImg fleft">
+                                                        <img src="../../images/code.png" width="80" height="24" />
+                                                        <a href="javascript:void(0);">换一张</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p>短信验证码</p>
+                                                <input type="text" class="messageCode borderColor" name="saleMessageCode" />
+                                                <input type="button" id="getCode" class="codeBtn borderColor" value="获取短信验证码" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="userDeal"><input type="checkbox" />我已阅读并同意<a href="javascript:void(0);">《艾漫用户注册协议》</a></label>
+                                            </td>
+                                            <td><input type="submit" value="注册萌热" class="saleRegistBtn" /></td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- //main -->
+        <div class="foot">
+            <div class="quickLinks">
+                <div class="sameWidth">
+                    <table>
+                        <tr>
+                            <th>新手帮助</th>
+                            <th>售后服务</th>
+                            <th>购买方法</th>
+                            <th>购物平台</th>
+                            <th>平台优势</th>
+                            <th>公司信息</th>
+                        </tr>
+                        <tr>
+                            <td><a href="/aimonPage/html/contentManagement/aboutUs.html">关于我们</a></td>
+                            <td><a href="#">退货服务</a></td>
+                            <td><a href="#">付款方式</a></td>
+                            <td><a href="#">艾漫淘宝</a></td>
+                            <td><a href="#">优惠活动</a></td>
+                            <td><a href="/aimonPage/html/contentManagement/aboutUs.html">公司简介</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="/aimonPage/html/contentManagement/ofenQuestion.html">常见问题</a></td>
+                            <td><a href="#">换货服务</a></td>
+                            <td><a href="#">预约流程</a></td>
+                            <td><a href="#">艾漫京东</a></td>
+                            <td><a href="#">隐私条款</a></td>
+                            <td><a href="/aimonPage/html/contentManagement/aboutUs.html">联系我们</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="copyRight">
+                <div class="sameWidth">
+                    沪ICP备12025715号 Copyright 艾漫（上海）贸易有限公司版权所有
+                </div>
+            </div>
+        </div><!-- //foot -->
+        <!-- 用户注册协议 -->
+        <div class="userDealPop">
+            <div class="userPopInner clearfix">
+                <div class="closeImg fright"><img src="../../images/closeed.png" width="25" height="25" /></div>
+                <div class="userDealText">
+                    <p>moehot用户注册协议</p>
+                    本协议是您与moehot网站（简称"本站"，网址：www.moehot.com）所有者（以下简称为"moehot"）之间就moehot网站服务等相关事宜所订立的契约，请您仔细阅读本注册协议，您点击"同意并继续"按钮后，本协议即构成对双方有约束力的法律文件。<br />
+                    第1条本站服务条款的确认和接纳<br />
+                    1.1本站的各项电子服务的所有权和运作权归moehot所有。用户同意所有注册协议条款并完成注册程序，才能成为本站的正式用户。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。<br />
+                    1.2用户点击同意本协议的，即视为用户确认自己具有享受本站服务、下单购物等相应的权利能力和行为能力，能够独立承担法律责任。<br />
+                    1.3如果您在18周岁以下，您只能在父母或监护人的监护参与下才能使用本站。<br />
+                    1.4moehot保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。<br />
+                    第2条本站服务<br /> 2.1moehot通过互联网依法为用户提供互联网信息等服务，用户在完全同意本协议及本站规定的情况下，方有权使用本站的相关服务。
+                </div>
+            </div>
+        </div>
+    </div><!-- //wrap -->
+    <script src="../../js/jquery-1.7.2.min.js"></script>
+    <script src="../../js/jquery.validate.js"></script>
+    <script src="../../js/jquery.mousewheel.js"></script>
+    <script src="../../js/perfect-scrollbar.js"></script>
+    <script src="../../js/common.js"></script>
+    <script>
+        $(function () {
+            //注册协议弹窗
+            $(".registMain .registchoiceMain .registSelect  .userTable .userDeal a").click(function () {
+                $(this).siblings("input").attr("checked", "checked");
+                $(".userDealPop").show();
+                return false;
+            });
+            $(".closeImg ").click(function () {
+                $(".userDealPop").hide();
+            });
+            $(window).click(function (e) {
+                if (!$(e.target).is(".userPopInner")) {
+                    $(".userDealPop").hide();
+                }
+            });
+            //分类注册入口
+            $(".registInner .userRegist").click(function () {
+                $(".registSelect .userInner").show().siblings().hide();
+            });
+            $(".registInner .saleRegist").click(function () {
+                $(".registSelect .saleInner").show().siblings().hide();
+            });
+            //经销商验证
+            $("#salerForm").validate({
+                rules: {
+                    saleUsername: {
+                        required: true
+                    },
+                    salePWD: {
+                        required: true
+                    },
+                    salePhone: {
+                        required: true,
+                        mobile: true
+                    },
+                    saleSurePWD: {
+                        required: true,
+                        equalTo: "#salePWD"
+                    },
+                    saleMessageCode: {
+                        required: true
+                    },
+                    saleCode: {
+                        required: true
+                    }
+                }, messages: {
+                    saleUsername: {
+                        required: "必须填写"
+                    },
+                    salePWD: {
+                        required: "必须填写"
+                    },
+                    salePhone: {
+                        required: "必须填写",
+                        mobile: "请输入电话"
+                    },
+                    saleSurePWD: {
+                        required: "必须填写",
+                        equalTo: "两次输入不一致"
+                    },
+                    saleMessageCode: {
+                        required: "必须填写"
+                    },
+                    saleCode: {
+                        required: "必须填写"
+                    }
+                },
+                submitHandler: function (form) {
+                    window.open('/aimonPage/html/login/registSucc(sale).html', '_self');
+                }
+            });
+            //用户注册验证
+            $("#userForm").validate({
+                rules: {
+                    userPhone: {
+                        required: true,
+                        mobile: true
+                    },
+                    userPwd: {
+                        required: true
+                    },
+                    userMessage: {
+                        required: true
+                    },
+                    userRePwd: {
+                        required: true,
+                        equalTo: "#userPwd"
+                    },
+                    userCode: {
+                        required: true
+                    }
+                }, messages: {
+                    userPhone: {
+                        required: "必须填写",
+                        mobile: "请输入电话"
+                    },
+                    userPwd: {
+                        required: "必须填写"
+                    },
+                    userMessage: {
+                        required: "必须填写"
+                    },
+                    userRePwd: {
+                        required: "必须填写",
+                        equalTo: "两次密码不一致"
+                    },
+                    userCode: {
+                        required: "必须填写"
+                    }
+                },
+                submitHandler: function (form) {
+                    window.open('/aimonPage/html/login/registSucc(user).html', '_self');
+                }
+            });
+        });
+    </script>s
+</body>
+</html>

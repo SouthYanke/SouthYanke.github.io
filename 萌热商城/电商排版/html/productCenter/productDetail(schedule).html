@@ -1,0 +1,864 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>产品详情页--可预定- MOEHOT</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <script src="../../js/modernizr-2.6.2.min.js"></script>
+    <link href="../../css/productCenter.css" rel="stylesheet" />
+    <link href="../../css/jqzoom.css" rel="stylesheet" />
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="wrap">
+        <div class="head">
+            <!-- 注册条 -->
+            <div class="headBar">
+                <div class="sameWidth forLogoPosition">
+                    <a href="http://121.40.102.225:6060/aimonPage/" class="logo"><img src="../../images/indexLogo.png" width="150" height="123" /></a>
+                    <div class="barElse clear">
+                        <div class="welcom fleft">
+                            欢迎来到萌热商城
+                            <a href="/aimonPage/html/login/login.html">[请登录]</a>
+                            <a href="/aimonPage/html/login/regist.html">[免费注册]</a>
+                        </div>
+                        <div class="headLinks fleft">
+                            <a href="/aimonPage/html/personalCenter/personalInfo.html">用户中心</a>
+                            <a href="/aimonPage/html/personalCenter/myMessage.html">我的消息</a>
+                            <a href="/aimonPage/html/personalCenter/myCollect.html">我的收藏</a>
+                            <a href="/aimonPage/html/helpCenter/helpCenter.html">帮助中心</a>
+                            <a href="javascript:void(0);">收藏本站</a>
+                        </div>
+                        <a href="javascript:void(0);" class="forPhone fleft">
+                            <img src="../../images/gotoPhoneDownLoad.png" width="152" height="45" />
+                            <p class="erweimaImgs">
+                                <img src="../../images/erwema.png" width="152" height="152" />
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 搜索条 -->
+            <div class="searchBar">
+                <div class="sameWidth searchBarBg">
+                    <div class="searchBarMain clearfix">
+                        <div class="searchImport fleft">
+                            <div class="clearfix">
+                                <input type="text" class="searchInput fleft" />
+                                <a href="/aimonPage/html/productCenter/search.html" class="searchBtn fleft">搜索</a>
+                            </div>
+                            <div class="searchLinks clearfix">
+                                <span class="fleft">人气热搜：</span>
+                                <a href="/aimonPage/html/productCenter/search.html" title="全职高手">全职高手</a>
+                                <a href="/aimonPage/html/productCenter/search.html" title="盗墓笔记">盗墓笔记</a>
+                                <a href="/aimonPage/html/productCenter/search.html" title="一拳超人">一拳超人</a>
+                                <a href="/aimonPage/html/productCenter/search.html" title="鬼吹灯">鬼吹灯</a>
+                                <a href="/aimonPage/html/productCenter/search.html" title="景品玩偶">景品玩偶</a>
+                                <a href="/aimonPage/html/productCenter/search.html" title="日版手办">日版手办</a>
+                                <a href="/aimonPage/html/productCenter/search.html" title="人偶">人偶</a>
+                                <a href="/aimonPage/html/productCenter/search.html" title="扭蛋">扭蛋</a>
+                            </div>
+                        </div>
+                        <div class="goForCart fleft clearfix">
+                            <span class="fleft">购物篮<span class="num">0</span>件  </span>
+                            <a href="/aimonPage/html/cart/cart.html" class="seeCart fright">查看购物篮</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航条 -->
+            <div class="navbar">
+                <div class="navbarBg sameWidth">
+                    <ul class="navUl clearfix">
+                        <li id="allCategoryNav">
+                            <a href="javascript:void(0);">全部商品</a>
+                            <div class="subNavWrap">
+                                <ul class="subNav clearfix">
+                                    <li class="default" orisrc="../../images/navImg1.png" bgsrc="../../images/navImg1Bg.png">
+                                        <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/navImg1Bg.png" width="31" height="25" />手办模型</a>
+                                        <div class="thirdNav clearfix" style="display:block;">
+                                            <div class="thirdLeft fleft clearfix" id="thirdLeft">
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg1.png" width="82" height="82" />
+                                                    <p title="手办">手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg2.png" width="82" height="82" />
+                                                    <p title="景品手办">景品手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg3.png" width="82" height="82" />
+                                                    <p title="景品毛绒">景品毛绒</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg5.png" width="82" height="82" />
+                                                    <p title="公仔玩偶">公仔玩偶</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg3.png" width="82" height="82" />
+                                                    <p title="景品杂货">景品杂货</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg6.png" width="82" height="82" />
+                                                    <p title="日本抽赏">日本抽赏</p>
+                                                </a>
+                                            </div>
+                                            <div class="thirdRight fright" id="thirdRight">
+                                                <div class="aboutProTitle">
+                                                    <p>相关热门产品</p>
+                                                    <span>Popular works</span>
+                                                </div>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg1.png" width="118" height="53" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg2.png" width="97" height="39" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg3.png" width="102" height="36" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg4.png" width="106" height="25" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg5.png" width="104" height="26" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg1.png" width="118" height="53" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg2.png" width="97" height="39" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg3.png" width="102" height="36" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg4.png" width="106" height="25" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg5.png" width="104" height="26" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li orisrc="../../images/navImg2.png" bgsrc="../../images/navImg2Bg.png" >
+                                        <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/navImg2.png" width="31" height="25" />服饰配件</a>
+                                        <div class="thirdNav clearfix">
+                                            <div class="thirdLeft fleft clearfix" id="thirdLeft">
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg1.png" width="82" height="82" />
+                                                    <p title="手办">手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg2.png" width="82" height="82" />
+                                                    <p title="景品手办">景品手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg3.png" width="82" height="82" />
+                                                    <p title="景品毛绒">景品毛绒</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg5.png" width="82" height="82" />
+                                                    <p title="公仔玩偶">公仔玩偶</p>
+                                                </a>
+                                            </div>
+                                            <div class="thirdRight fright" id="thirdRight">
+                                                <div class="aboutProTitle">
+                                                    <p>相关热门产品</p>
+                                                    <span>Popular works</span>
+                                                </div>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg1.png" width="118" height="53" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg2.png" width="97" height="39" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg3.png" width="102" height="36" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg4.png" width="106" height="25" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li orisrc="../../images/navImg3.png" bgsrc="../../images/navImg3Bg.png" >
+                                        <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/navImg3.png" width="31" height="25" />办公文具</a>
+                                        <div class="thirdNav clearfix">
+                                            <div class="thirdLeft fleft clearfix" id="thirdLeft">
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg1.png" width="82" height="82" />
+                                                    <p title="手办">手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg2.png" width="82" height="82" />
+                                                    <p title="景品手办">景品手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg3.png" width="82" height="82" />
+                                                    <p title="景品毛绒">景品毛绒</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg5.png" width="82" height="82" />
+                                                    <p title="公仔玩偶">公仔玩偶</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg3.png" width="82" height="82" />
+                                                    <p title="景品杂货">景品杂货</p>
+                                                </a>
+                                            </div>
+                                            <div class="thirdRight fright" id="thirdRight">
+                                                <div class="aboutProTitle">
+                                                    <p>相关热门产品</p>
+                                                    <span>Popular works</span>
+                                                </div>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg1.png" width="118" height="53" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg2.png" width="97" height="39" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg3.png" width="102" height="36" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li orisrc="../../images/navImg4.png" bgsrc="../../images/navImg4Bg.png" >
+                                        <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/navImg4.png" width="31" height="25" />数码周边</a>
+                                        <div class="thirdNav clearfix">
+                                            <div class="thirdLeft fleft clearfix" id="thirdLeft">
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg1.png" width="82" height="82" />
+                                                    <p title="手办">手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg2.png" width="82" height="82" />
+                                                    <p title="景品手办">景品手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg3.png" width="82" height="82" />
+                                                    <p title="景品毛绒">景品毛绒</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg5.png" width="82" height="82" />
+                                                    <p title="公仔玩偶">公仔玩偶</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg3.png" width="82" height="82" />
+                                                    <p title="景品杂货">景品杂货</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg6.png" width="82" height="82" />
+                                                    <p title="日本抽赏">日本抽赏</p>
+                                                </a>
+                                            </div>
+                                            <div class="thirdRight fright" id="thirdRight">
+                                                <div class="aboutProTitle">
+                                                    <p>相关热门产品</p>
+                                                    <span>Popular works</span>
+                                                </div>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg1.png" width="118" height="53" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg2.png" width="97" height="39" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg3.png" width="102" height="36" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg4.png" width="106" height="25" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg5.png" width="104" height="26" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg1.png" width="118" height="53" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg2.png" width="97" height="39" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg3.png" width="102" height="36" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg4.png" width="106" height="25" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg5.png" width="104" height="26" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li orisrc="../../images/navImg5.png" bgsrc="../../images/navImg5Bg.png" >
+                                        <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/navImg5.png" width="31" height="25" />家居布艺</a>
+                                        <div class="thirdNav clearfix">
+                                            <div class="thirdLeft fleft clearfix" id="thirdLeft">
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg1.png" width="82" height="82" />
+                                                    <p title="手办">手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg2.png" width="82" height="82" />
+                                                    <p title="景品手办">景品手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg3.png" width="82" height="82" />
+                                                    <p title="景品毛绒">景品毛绒</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg5.png" width="82" height="82" />
+                                                    <p title="公仔玩偶">公仔玩偶</p>
+                                                </a>
+                                            </div>
+                                            <div class="thirdRight fright" id="thirdRight">
+                                                <div class="aboutProTitle">
+                                                    <p>相关热门产品</p>
+                                                    <span>Popular works</span>
+                                                </div>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg1.png" width="118" height="53" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg2.png" width="97" height="39" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg3.png" width="102" height="36" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg4.png" width="106" height="25" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li orisrc="../../images/navImg6.png" bgsrc="../../images/navImg6Bg.png" >
+                                        <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/navImg6.png" width="31" height="25" />箱包袋类</a>
+                                        <div class="thirdNav clearfix">
+                                            <div class="thirdLeft fleft clearfix" id="thirdLeft">
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg1.png" width="82" height="82" />
+                                                    <p title="手办">手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg2.png" width="82" height="82" />
+                                                    <p title="景品手办">景品手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg3.png" width="82" height="82" />
+                                                    <p title="景品毛绒">景品毛绒</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg5.png" width="82" height="82" />
+                                                    <p title="公仔玩偶">公仔玩偶</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg3.png" width="82" height="82" />
+                                                    <p title="景品杂货">景品杂货</p>
+                                                </a>
+                                            </div>
+                                            <div class="thirdRight fright" id="thirdRight">
+                                                <div class="aboutProTitle">
+                                                    <p>相关热门产品</p>
+                                                    <span>Popular works</span>
+                                                </div>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg1.png" width="118" height="53" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg2.png" width="97" height="39" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg3.png" width="102" height="36" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li orisrc="../../images/navImg7.png" bgsrc="../../images/navImg7Bg.png" >
+                                        <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/navImg7.png" width="31" height="25" />毛绒玩具</a>
+                                        <div class="thirdNav clearfix">
+                                            <div class="thirdLeft fleft clearfix" id="thirdLeft">
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg1.png" width="82" height="82" />
+                                                    <p title="手办">手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg2.png" width="82" height="82" />
+                                                    <p title="景品手办">景品手办</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg3.png" width="82" height="82" />
+                                                    <p title="景品毛绒">景品毛绒</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg5.png" width="82" height="82" />
+                                                    <p title="公仔玩偶">公仔玩偶</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg3.png" width="82" height="82" />
+                                                    <p title="景品杂货">景品杂货</p>
+                                                </a>
+                                                <a href="/aimonPage/html/productCenter/search.html">
+                                                    <img src="../../images/subNavImg6.png" width="82" height="82" />
+                                                    <p title="日本抽赏">日本抽赏</p>
+                                                </a>
+                                            </div>
+                                            <div class="thirdRight fright" id="thirdRight">
+                                                <div class="aboutProTitle">
+                                                    <p>相关热门产品</p>
+                                                    <span>Popular works</span>
+                                                </div>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg1.png" width="118" height="53" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg2.png" width="97" height="39" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg3.png" width="102" height="36" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg4.png" width="106" height="25" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg5.png" width="104" height="26" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg1.png" width="118" height="53" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg2.png" width="97" height="39" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg3.png" width="102" height="36" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg4.png" width="106" height="25" /></a>
+                                                <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/thirdImg5.png" width="104" height="26" /></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://121.40.102.225:6060/aimonPage/">首页</a>
+                        </li>
+                        <li>
+                            <a href="/aimonPage/html/productCenter/search.html">新品预定</a>
+                        </li>
+                        <li>
+                            <a href="/aimonPage/html/productCenter/search.html">现货热销</a>
+                        </li>
+                        <li>
+                            <a href="/aimonPage/html/productCenter/search.html">艾漫出品</a>
+                        </li>
+                        <li>
+                            <a href="/aimonPage/html/activity/activityList.html">活动专区</a>
+                        </li>
+                        <li>
+                            <a href="/aimonPage/html/news/newsList.html">资讯中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- //head -->
+        <div class="main sameWidth clearfix">
+            <div class="BannerSlidePart">
+                <div class="mainLeft leftLinks borderColor leftBarMargin  fleft">
+                    <div class="title"><span>今日截单</span></div>
+                    <p class="date">2016/05/01</p>
+                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html">粘土人MORE 榻榻米 茶</a>
+                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html">粘土人 赫斯缇雅</a>
+                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html">粘土人Plus 橡胶挂件 LoveLive!04</a>
+                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html">粘土人 小丑 Villain's Edition</a>
+                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html">粘土人 红雀</a>
+                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html">超级索尼子 比基尼晒黑ver</a>
+                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html">粘土人 安娜</a>
+                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html">日之冈穂群 泳装style</a>
+                    <div class="moreBtns clearfix"><a href="#" class="moreEng fleft">MORE</a><a href="#" class="moreChi fleft">查看更多</a></div>
+                </div>
+                <!--右边商品信息-->
+                <div class="main_div">
+                    <!--面包屑公用-->
+                    <div class="crumbs clearfix">
+                        <a href="http://121.40.102.225:6060/aimonPage/">首页</a>
+                        <span class="forGt"></span>
+                        <span>新品预定</span>
+                    </div>
+                    <!--经销商内容-->
+                    <div class="dealer">
+                        <div class="dealerDiv">
+                            <!--放大镜区域jqzoom-->
+                            <div class="jsder">
+                                <div class="tb-booth tb-pic tb-s310">
+                                    <a href="images/dealer01.png"><img src="../../images/dealer01.png" alt="美女" rel="../../images/dealer01.png" class="jqzoom" /></a>
+                                </div>
+                                <ul class="tb-thumb" id="thumblist">
+                                    <li class="tb-selected"><div class="tb-pic tb-s40"><a href="#"><img src="../../images/dealer17.png" mid="../../images/dealer01.png" big="../../images/dealer01.png"></a></div></li>
+                                    <li><div class="tb-pic tb-s40"><a href="#"><img src="../../images/dealer17.png" mid="../../images/dealer01.png" big="../../images/dealer01.png"></a></div></li>
+                                    <li><div class="tb-pic tb-s40"><a href="#"><img src="../../images/dealer17.png" mid="../../images/dealer01.png" big="../../images/dealer01.png"></a></div></li>
+                                    <li><div class="tb-pic tb-s40"><a href="#"><img src="../../images/dealer17.png" mid="../../images/dealer01.png" big="../../images/dealer01.png"></a></div></li>
+                                    <li><div class="tb-pic tb-s40"><a href="#"><img src="../../images/dealer17.png" mid="../../images/dealer01.png" big="../../images/dealer01.png"></a></div></li>
+                                </ul>
+                            </div>
+                            <!--商品信息-->
+                            <div class="dealer_Right fright">
+                                <span class="introduce">清仓特价 代理版 GSC 回转企鹅罐 水晶公主 粘土【预定】</span>
+                                <div class="cost_div clearfix">
+                                    <div class="earnestMoney clearfix">
+                                        <span>定金</span>
+                                        <span class="money">&yen227.90</span>
+                                    </div>
+                                    <div class="collect fleft">
+                                        <a href="javascript:void(0);">收藏商品</a>
+                                    </div>
+                                    <div class="collects fleft">
+                                        <a href="###">分享商品</a>
+                                    </div>
+                                    <div class="category_div fleft">
+                                        <p class="dealers_Texts">
+                                            促销：满200元减20元
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="date_Div fleft">
+                                    <p class="date_Divtext">
+                                        <span>截止日期</span>
+                                        <span>2016年04月25日</span>
+                                        <span>发售日期</span>
+                                        <span>2016年08月</span>
+                                    </p>
+                                    <div class="serviceImg" id="serviceImg">
+                                        <img src="../../images/dealer18.png" alt="客服图片" />
+                                        <div>
+                                            <a href="javascript:void(0);"><img src="../../images/dealer21.png" alt="客服图片" class="clock" /></a>
+                                            <a href="javascript:void(0);"><img src="../../images/dealer23.png" alt="客服图片" class="clock2" /></a>
+                                        </div>
+                                    </div>
+                                    <p class="date_Divtexts">
+                                        <span>产品状态</span>
+                                        <span>新品预定</span>
+                                        <span>入箱数</span>
+                                        <span><span>1</span>件</span>
+                                    </p>
+                                </div>
+                                <div class="selectDiv fleft">
+                                    <p>
+                                        <span>颜色</span>
+                                        <span class="width_Collss">
+                                            <a href="javascript:void(0);" class="borde_color active">如图色</a>
+                                            <a href="javascript:void(0);" class="borde_color">黑色</a>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <span>规格</span>
+                                        <span class="width_Collss"><a href="javascript:void(0);" class="borde_color active">如图规格</a></span>
+                                    </p>
+                                    <p class="lin-hk">
+                                        <span>数量</span>
+                                        <i class="quantity fleft">
+                                            <input type="text" value="1" class="text fleft" id="text" onkeyup="if(this.value.length>4){this.value=this.value.substr(0,4)};this.value=this.value.replace(/[^\d]/g,'');" />
+                                            <input type="button" value="" class="buttons" />
+                                            <input type="button" value="" class="buttonST" />
+                                        </i>
+                                        <span> 库存:可预订</span>
+                                    </p>
+                                </div>
+                                <!--按钮-->
+                                <div class="button">
+                                    <a href="###">立即购买</a>
+                                    <a href="###" class="shoppingCar">加入购物篮</a>
+                                </div>
+                            </div>
+                            <!--底部收藏-->
+                            <div class="sharediv fleft">
+                                <a href="###" class="sharediv_left">收藏宝贝 (689人气) </a>|
+                                <a href="###" class="sharediv_lefts">分享 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--购物车弹窗-->
+                    <div class="popup">
+                        <p class="delete">.</p>
+                        <p class="succeed">成功将货品放进篮子！</p>
+                        <p class="money">购物车内共有<span>30</span>件商品 合计<span>&yen3000.00</span></p>
+                        <p class="examine">
+                            <a href="/aimonPage/html/cart/cart.html">查看购物篮</a>
+                        </p>
+                    </div>
+                    <!--添加收藏成功-->
+                    <div class="collectPopup">
+                        <p class="delete"></p>
+                        <p class="succeed">成功加入我的收藏！</p>
+                        <p class="examine">
+                            <a href="/aimonPage/html/personalCenter/myCollect.html">查看收藏夹</a>
+                        </p>
+                    </div>
+                    <!--商品详情TAB-->
+                    <div class="particularsTab">
+                        <div class="tab_a">
+                            <a href="###" class="background_Top">商品详情</a>
+                            <a href="###" class="bordeLr">累计评论<span>(0)</span></a>
+                            <a href="###">商品咨询<span>(0)</span></a>
+                        </div>
+                        <div class="show fleft">
+                            <div class="particulars1">
+                                <b class="marginBor">
+                                    <img src="../../images/dealer07.png" alt="商品信息" />
+                                    <p class="color">由于清仓， 部分产品存在盒损情况， 商品是完好的， 下单前如有问题请旺旺资讯， 谢谢 !</p>
+                                    <p>品牌: GSC</p>
+                                    <p>作品: 回转企鹅罐</p>
+                                    <p>规格: 10cm</p>
+                                    <p>材质: ABS&PVC</p>
+                                    <img src="../../images/dealer08.png" alt="商品信息" />
+                                    <img src="../../images/dealer09.png" alt="商品信息" class="img_09" />
+                                </b>
+                            </div>
+                            <div>
+                                <b class="marginBor">
+                                    <p>品牌: GSC</p>
+                                    <p>作品: 回转企鹅罐</p>
+                                    <p>规格: 10cm</p>
+                                    <p>材质: ABS&PVC</p>
+                                    <img src="../../images/dealer08.png" alt="商品信息" />
+                                </b>
+                            </div>
+                            <div>
+                                <i class="excuse">我想咨询</i>
+                                <textarea></textarea>
+                                <a href="###" class="quiz">提问</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainCenter">
+                    <div class="leftPart mainLeft fleft clearfix">
+                        <!-- 左侧导航-最新截单 -->
+                        <div class="mainLeft leftLinks borderColor leftBarMargin  fleft">
+                            <div class="title titleNew"><span>最新截单</span></div>
+                            <p class="date">2016/05/01</p>
+                            <p>16年03月27日 已截单 19款</p>
+                            <p>16年03月28日 已截单 3款</p>
+                            <p>16年03月29日 已截单 17款</p>
+                            <p>16年03月31日 截单产品：248款</p>
+                            <p>16年04月01日 截单产品：37款</p>
+                            <p>16年04月02日 截单产品：10款</p>
+                            <p>16年04月03日 截单产品：2款</p>
+                            <p>16年04月04日 截单产品：5款</p>
+                            <p>16年04月03日 截单产品：2款</p>
+                            <p>16年04月04日 截单产品：5款</p>
+                            <div class="moreBtns clearfix"><a href="#" class="moreEng fleft">MORE</a><a href="#" class="moreChi fleft">查看更多</a></div>
+                        </div>
+                        <!-- 左侧导航-最新上架-新品 -->
+                        <div class=" leftLinks borderColor leftBarMargin indexNew fleft">
+                            <div class="title titleNew2"><span>最新上架-新品</span></div>
+                            <div class="forPadding">
+                                <p>16年03月27日 已上架：20款</p>
+                                <p>16年03月28日 已上架：42款</p>
+                                <p>16年03月30日 已上架：13款</p>
+                            </div>
+                            <div class="moreBtns clearfix"><a href="#" class="moreEng fleft">MORE</a><a href="#" class="moreChi fleft">查看更多</a></div>
+                        </div>
+                        <!-- 左侧导航-最新上架-现货 -->
+                        <div class=" leftLinks borderColor leftBarMargin indexNew fleft">
+                            <div class="title titleNew3"><span>最新上架-现货</span></div>
+                            <div class="forPadding">
+                                <p>16年03月27日 已上架：20款</p>
+                                <p>16年03月28日 已上架：42款</p>
+                                <p>16年03月30日 已上架：13款</p>
+                            </div>
+                            <div class="moreBtns clearfix"><a href="#" class="moreEng fleft">MORE</a><a href="#" class="moreChi fleft">查看更多</a></div>
+                        </div>
+                        <!-- 左侧导航-人气宝贝排行榜 -->
+                        <div class=" leftLinks borderColor leftBarMargin popularList fleft">
+                            <div class="title titleNew4"><span>人气宝贝排行榜</span></div>
+                            <ul class="popularUl">
+                                <li class="clearfix">
+                                     <img src="../../images/number1.png" width="13" height="13" class="fleft" />
+                                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html" class="fleft">《全职高手》金属战队logo钥匙扣</a>
+                                </li>
+                                <li class="clearfix">
+                                    <img src="../../images/number2.png" width="13" height="13" class="fleft" />
+                                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html" class="fleft">《全职高手》国家队大大号桌垫</a>
+                                </li>
+                                <li class="clearfix">
+                                    <img src="../../images/number3.png" width="13" height="13" class="fleft" />
+                                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html" class="fleft">《全职高手》绝密档案手册</a>
+                                </li>
+                                <li class="clearfix">
+                                    <img src="../../images/number4.png" width="13" height="13" class="fleft" />
+                                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html" class="fleft">《盗墓笔记》大号桌垫</a>
+                                </li>
+                                <li class="clearfix">
+                                    <img src="../../images/number5.png" width="13" height="13" class="fleft" />
+                                    <a href="#" class="fleft">全职高手 立绘亚克力立牌</a>
+                                </li>
+                                <li class="clearfix">
+                                    <img src="../../images/number6.png" width="13" height="13" class="fleft" />
+                                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html" class="fleft">全职高手 线装笔记本豪华版</a>
+                                </li>
+                                <li class="clearfix">
+                                    <img src="../../images/number7.png" width="13" height="13" class="fleft" />
+                                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html" class="fleft">《全职高手》国际赛海报</a>
+                                </li>
+                                <li class="clearfix">
+                                    <img src="../../images/number8.png" width="13" height="13" class="fleft" />
+                                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html" class="fleft">1/8 叶修in《全职高手》PVC手办</a>
+                                </li>
+                                <li class="clearfix">
+                                    <img src="../../images/number9.png" width="13" height="13" class="fleft" />
+                                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html" class="fleft">《盗墓笔记》常规明信片</a>
+                                </li>
+                                <li class="clearfix">
+                                    <img src="../../images/number10.png" width="13" height="13" class="fleft" />
+                                    <a href="/aimonPage/html/productCenter/productCentail(particulars).html" class="fleft">全职高手 精装笔记本礼盒版</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 左侧导航-商品品牌分类 -->
+                        <div class=" leftLinks borderColor brandKind fleft">
+                            <div class="title"><span>商品品牌分类</span></div>
+                            <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/leftProBrand1.png" width="264" height="135" /></a>
+                            <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/leftProBrand2.png" width="264" height="109" /></a>
+                            <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/leftProBrand3.png" width="264" height="109" /></a>
+                            <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/leftProBrand4.png" width="264" height="109" /></a>
+                            <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/leftProBrand5.png" width="264" height="109" /></a>
+                            <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/leftProBrand6.png" width="264" height="109" /></a>
+                            <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/leftProBrand7.png" width="264" height="109" /></a>
+                            <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/leftProBrand8.png" width="264" height="109" /></a>
+                            <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/leftProBrand9.png" width="264" height="109" /></a>
+                            <a href="/aimonPage/html/productCenter/search.html"><img src="../../images/leftProBrand10.png" width="264" height="109" /></a>
+                        </div>
+                    </div>
+                    <div class="rightPart mainRight fright">
+                        <!-- 新品上架部分-->
+                        <div class="newProArrival">
+                            <div class="newProTitles"><span>猜你喜欢</span><a href="javascript:void(0);" class="exchan">换一批</a></div>
+                            <ul class="newProUl clearfix">
+                                <li>
+                                    <a href="/aimonPage/html/productCenter/productDetail(dealer).html;"><img src="../../images/indexNewProImg1.png" width="118" height="118" /></a>
+                                    <a href="#" class="proName">小粘土 初音未来 Renewal(附特典)</a>
+                                    <p>预售</p>
+                                </li>
+                                <li>
+                                    <a href="/aimonPage/html/productCenter/productDetail(dealer).html;"><img src="../../images/indexNewProImg2.png" width="118" height="118" /></a>
+                                    <a href="#" class="proName">小粘土 初音未来 Renewal(附特典)</a>
+                                    <p>预售</p>
+                                </li>
+                                <li>
+                                    <a href="/aimonPage/html/productCenter/productDetail(dealer).html;"><img src="../../images/indexNewProImg3.png" width="118" height="118" /></a>
+                                    <a href="#" class="proName">小粘土 初音未来 Renewal(附特典)</a>
+                                    <p>预售</p>
+                                </li>
+                                <li>
+                                    <a href="/aimonPage/html/productCenter/productDetail(dealer).html;"><img src="../../images/indexNewProImg1.png" width="118" height="118" /></a>
+                                    <a href="#" class="proName">小粘土 初音未来 Renewal(附特典)</a>
+                                    <p>预售</p>
+                                </li>
+                                <li>
+                                    <a href="/aimonPage/html/productCenter/productDetail(dealer).html;"><img src="../../images/indexNewProImg2.png" width="118" height="118" /></a>
+                                    <a href="#" class="proName">小粘土 初音未来 Renewal(附特典)</a>
+                                    <p>预售</p>
+                                </li>
+                                <li>
+                                    <a href="/aimonPage/html/productCenter/productDetail(dealer).html;"><img src="../../images/indexNewProImg3.png" width="118" height="118" /></a>
+                                    <a href="#" class="proName">小粘土 初音未来 Renewal(附特典)</a>
+                                    <p>预售</p>
+                                </li>
+                                <li>
+                                    <a href="/aimonPage/html/productCenter/productDetail(dealer).html;"><img src="../../images/indexNewProImg2.png" width="118" height="118" /></a>
+                                    <a href="#" class="proName">小粘土 初音未来 Renewal(附特典)</a>
+                                    <p>预售</p>
+                                </li>
+                                <li>
+                                    <a href="/aimonPage/html/productCenter/productDetail(dealer).html;"><img src="../../images/indexNewProImg3.png" width="118" height="118" /></a>
+                                    <a href="#" class="proName">小粘土 初音未来 Renewal(附特典)</a>
+                                    <p>预售</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- //main -->
+        <div class="foot">
+            <div class="quickLinks">
+                <div class="sameWidth">
+                    <table>
+                        <tr>
+                            <th>新手帮助</th>
+                            <th>售后服务</th>
+                            <th>购买方法</th>
+                            <th>购物平台</th>
+                            <th>平台优势</th>
+                            <th>公司信息</th>
+                        </tr>
+                        <tr>
+                            <td><a href="/aimonPage/html/contentManagement/aboutUs.html">关于我们</a></td>
+                            <td><a href="#">退货服务</a></td>
+                            <td><a href="#">付款方式</a></td>
+                            <td><a href="#">艾漫淘宝</a></td>
+                            <td><a href="#">优惠活动</a></td>
+                            <td><a href="/aimonPage/html/contentManagement/aboutUs.html">公司简介</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="/aimonPage/html/contentManagement/ofenQuestion.html">常见问题</a></td>
+                            <td><a href="#">换货服务</a></td>
+                            <td><a href="#">预约流程</a></td>
+                            <td><a href="#">艾漫京东</a></td>
+                            <td><a href="#">隐私条款</a></td>
+                            <td><a href="/aimonPage/html/contentManagement/aboutUs.html">联系我们</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="copyRight">
+                <div class="sameWidth">
+                    沪ICP备12025715号 Copyright 艾漫（上海）贸易有限公司版权所有
+                </div>
+            </div>
+        </div>    <!-- //foot -->
+    </div><!-- //wrap -->
+    <script src="../../js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.imagezoom.min.js"></script>
+    <script src="../../js/jquery.mousewheel.js"></script>
+    <script src="../../js/perfect-scrollbar.js"></script>
+    <script src="../../js/common.js"></script>
+    <script>
+        //商品详情切换
+        $(function () {
+            $('.tab_a a').click(function () {
+                var i = $('.tab_a a').index(this);
+                $('.tab_a a').eq(i).addClass('background_Top').siblings().removeClass('background_Top');
+                $('.show div').eq(i).addClass('particulars1').siblings().removeClass('particulars1');
+            });
+            //收藏功能
+            $(".dealerDiv .dealer_Right .cost_div .collect").click(function () {
+                $(this).toggleClass("active");
+            });
+            //收藏弹窗
+            $(".dealerDiv .dealer_Right .cost_div .collect").click(function () {
+                $('.collectPopup').show();
+                return false;
+            });
+
+            $(".delete").click(function () {
+                $('.collectPopup').hide();
+            });
+
+            $(window).click(function (e) {
+                if (!$(e.target).is(".collectPopup")) {
+                    $(".collectPopup").hide();
+                }
+            });
+            //放大镜收藏弹窗
+            $(".dealerDiv .sharediv .sharediv_left").click(function () {
+                $('.collectPopup').show();
+                return false;
+            });
+            $(".delete").click(function () {
+                $('.collectPopup').hide();
+            });
+            $(window).click(function (e) {
+                if (!$(e.target).is(".collectPopup")) {
+                    $(".collectPopup").hide();
+                }
+            });
+        })
+        $(document).ready(function () {
+            //获得文本框对象
+            var t = $(".text");
+            //初始化数量为1,并失效减
+            $('.buttonST').attr('disabled', true);
+            //数量增加操作
+            $(".buttons").click(function () {
+                t.val(parseInt(t.val()) + 1)
+                if (parseInt(t.val()) != 1) {
+                    $('.buttonST').attr('disabled', false);
+                }
+            })
+            //数量减少操作
+            $(".buttonST").click(function () {
+                t.val(parseInt(t.val()) - 1);
+                if (parseInt(t.val()) == 1) {
+                    $('.buttonST').attr('disabled', true);
+                }
+            })
+        });
+        //弹窗显示
+        $(".button .shoppingCar").click(function () {
+            $('.popup').show();
+            return false;
+        });
+        $(".delete").click(function () {
+            $('.popup').hide();
+        });
+
+        $(window).click(function (e) {
+            if (!$(e.target).is(".popup")) {
+                $(".popup").hide();
+            }
+        });
+        //商品点选
+        $(".selectDiv p .borde_color").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+        //放大镜
+        $(document).ready(function () {
+            $(".jqzoom").imagezoom();
+            $("#thumblist li a").click(function () {
+                $(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+                $(".jqzoom").attr('src', $(this).find("img").attr("mid"));
+                $(".jqzoom").attr('rel', $(this).find("img").attr("big"));
+            });
+        });
+
+        //客服显示
+        $(".serviceImg").hover(function () {
+            $(".serviceImg div").show();
+        }, function () {
+            $(".serviceImg div").hide();
+        });
+        $(".serviceImg div .clock").hover(function () {
+            $(this).attr("src", "../../images/dealer22.png");
+        }, function () {
+            $(this).attr("src", "../../images/dealer21.png");
+        });
+        $(".serviceImg div .clock2").hover(function () {
+            $(this).attr("src", "../../images/dealer24.png");
+        }, function () {
+            $(this).attr("src", "../../images/dealer23.png");
+        });
+    </script>
+
+</body>
+</html>

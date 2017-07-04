@@ -1,0 +1,211 @@
+﻿/*帮助中心*/
+.helpCenterPage {
+  padding-top: 30px;
+  border-top: 10px solid #e3e3e3;
+  margin-top: -2px;
+}
+.helpCenterPage > .sameWidth {
+  margin-bottom: 50px;
+}
+.helpCenterPage .helpNotice {
+  margin-top: 7px;
+  font-family: "SimSun";
+  font-size: 12px;
+  color: #636363;
+}
+.helpCenterPage .helpType {
+  margin-top: 37px;
+}
+.helpCenterPage .helpType .hrcrtop {
+  line-height: 40px;
+  border-bottom: 1px dashed #d2d2d2;
+  margin-bottom: 8px;
+}
+.helpCenterPage .helpType .hrcrtop .hrcrTitle {
+  float: left;
+  text-align: left;
+  font-size: 16px;
+  line-height: 37px;
+  color: #636363;
+}
+.helpCenterPage .helpType .hrcrtop .hrcrMore {
+  float: right;
+  font-family: "SimSun";
+  font-size: 12px;
+  font-weight: 100;
+  color: #636363;
+  background: url(../images/moreBg.png) right center no-repeat;
+  padding-right: 12px;
+}
+.helpCenterPage .helpType .hrblbottom ul li {
+  text-align: left;
+  font-family: 'SimSun';
+  font-size: 12px;
+  line-height: 25px;
+}
+.helpCenterPage .helpType .hrblbottom ul li a {
+  color: #636363;
+  font-family: "SimSun";
+  line-height: 34px;
+}
+/*常见问题*/
+.meetQuestionPage {
+  padding-top: 30px;
+  border-top: 10px solid #e3e3e3;
+  margin-top: -2px;
+}
+.meetQuestionPage > .sameWidth {
+  margin-bottom: 50px;
+}
+.meetQuestionPage .nav {
+  background: #fff;
+  margin-right: 10px;
+}
+.meetQuestionPage .nav a {
+  float: left;
+  font-size: 16px;
+  color: #757575;
+  line-height: 30px;
+  width: 171px;
+  display: block;
+  text-align: center;
+  margin-right: 1px;
+  background: #f0f0f0;
+}
+.meetQuestionPage .nav .on {
+  color: #fff;
+  background: #ff7900;
+}
+.meetQuestionPage .tabContentList {
+  width: 99%;
+  background: #fff;
+  margin-top: 30px;
+}
+.meetQuestionPage .tabContentList dl {
+  border-bottom: 1px dashed #d2d2d2;
+}
+.meetQuestionPage .tabContentList dl dt {
+  line-height: 33px;
+  font-family: "SimSun";
+  font-size: 12px;
+  color: #636363;
+  background: url(../images/squreFlag.png) 0 center no-repeat;
+  text-indent: 15px;
+}
+.meetQuestionPage .tabContentList dl dt div {
+  background: url(../images/noticeBg.png) right 17px no-repeat;
+}
+.meetQuestionPage .tabContentList dl dt .active {
+  background: url(../images/noticeBg.png) right -27px no-repeat;
+}
+.meetQuestionPage .tabContentList dl dd {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 14px;
+  font-family: "SimSun";
+  line-height: 20px;
+  color: #636363;
+  display: none;
+}
+.mainRight {
+  width: 1042px;
+  margin-left: 10px;
+}
+/*公告列表*/
+.noticeListpage {
+  padding-top: 35px;
+  border-top: 10px solid #e3e3e3;
+  margin-top: -2px;
+}
+.noticeListpage > .sameWidth {
+  margin-bottom: 50px;
+}
+.noticeListpage .righthead {
+  font-size: 16px;
+  color: #636363;
+  border-bottom: 1px dashed #d2d2d2;
+  height: 30px;
+}
+.noticeListpage .noticeDataList {
+  margin-top: 7px;
+}
+.noticeListpage .noticeDataList .noticeDataItem {
+  border-bottom: 1px dashed #d2d2d2;
+  padding: 11px 0;
+}
+.noticeListpage .noticeDataList .noticeDataItem .noticeTitle {
+  display: block;
+  background: url(../images/squreFlag.png) 0 center no-repeat;
+  height: 25px;
+  text-indent: 15px;
+  font-family: "SimSun";
+  font-size: 16px;
+  color: #636363;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-top: 5px;
+}
+.noticeListpage .noticeDataList .noticeDataItem .noticeContent {
+  color: #636363;
+  font-family: "SimSun";
+  text-indent: 15px;
+  margin-bottom: 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-top: 6px;
+}
+/*公告详情*/
+.noticeDetailpage {
+  padding-top: 35px;
+  border-top: 10px solid #e3e3e3;
+  margin-top: -2px;
+}
+.noticeDetailpage .righthead {
+  font-size: 16px;
+  color: #636363;
+  border-bottom: 1px dashed #d2d2d2;
+  height: 30px;
+}
+.noticeDetailpage .noticeDataDetail .noticeDataTitle {
+  margin-top: 48px;
+  text-align: center;
+  font-size: 25px;
+  font-family: "黑体";
+  color: #000000;
+}
+.noticeDetailpage .noticeDataDetail .noticeDataDate {
+  font-family: "SimSun";
+  text-align: center;
+  color: #000;
+}
+.noticeDetailpage .noticeDataDetail .retBtn {
+  margin-top: 160px;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  color: #646464;
+  margin-bottom: 115px;
+}
+/*萌新引导*/
+.newGuidancePage {
+  padding-top: 35px;
+  border-top: 10px solid #e3e3e3;
+  margin-top: -2px;
+}
+.newGuidancePage > .sameWidth {
+  margin-bottom: 50px;
+}
+.newGuidancePage .righthead {
+  font-size: 16px;
+  color: #636363;
+  border-bottom: 1px dashed #d2d2d2;
+  margin-bottom: 20px;
+  padding-bottom: 6px;
+}
+/*# sourceMappingURL=helpCenter.css.map */

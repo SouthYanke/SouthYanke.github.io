@@ -1,0 +1,287 @@
+﻿/**********公用的CSS函数*********/
+/*橙色按钮*/
+/*活动和咨询*/
+/*.mainMarginBottom {
+    padding-bottom: 188px;
+}*/
+.actContent {
+  width: 100%;
+  max-width: 1060px;
+}
+.actContent .content {
+  border: 1px solid #f0f0f0;
+  border-top: none;
+  position: relative;
+  font-family: SimSun;
+}
+.actContent .content .detailsTitle {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 32px;
+  color: #4a4a4a;
+  width: 100%;
+  font-family: SimSun;
+}
+.actContent .content .subtitle {
+  width: 100%;
+  text-align: center;
+  color: #757575;
+  padding-top: 7px;
+}
+.actContent .content .subtitle .date {
+  margin-right: 24px;
+}
+.actContent .content .wordBody {
+  margin: 16px 12px 0 12px;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 28px;
+}
+.actContent .content .share {
+  width: 100%;
+  height: 48px;
+  margin-top: 14px;
+  margin-right: 8px;
+  margin-bottom: 18px;
+  position: relative;
+}
+.actContent .content .share span {
+  font-size: 14px;
+  margin-right: 4px;
+  display: block;
+  line-height: 48px;
+}
+.actContent .content .share .weChatIco {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+  background-image: url("../images/share.png");
+  background-position: 144px 0;
+}
+.actContent .content .share .qqIco {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+  background-image: url("../images/share.png");
+  background-position: 96px 0;
+}
+.actContent .content .share .sinaIco {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+  background-image: url("../images/share.png");
+  background-position: 48px 0;
+}
+.actContent .listpage {
+  position: relative;
+  margin-right: -12px;
+  margin-top: 11px;
+}
+.actContent .listpage .oneAct {
+  width: 343px;
+  height: 243px;
+  border: 1px solid #f0f0f0;
+  margin-bottom: 10px;
+  margin-right: 12px;
+}
+.actContent .listpage .oneAct .actimg {
+  display: block;
+  width: 325px;
+  height: 104px;
+  margin-top: 9px;
+  margin-left: 9px;
+}
+.actContent .listpage .oneAct .actimg img {
+  width: 325px;
+  height: 104px;
+}
+.actContent .listpage .oneAct .acttitle {
+  margin-top: 22px;
+  width: 325px;
+  padding: 0 9px;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.actContent .listpage .oneAct .actSub {
+  width: 325px;
+  padding: 0 9px;
+  text-align: center;
+  color: #757575;
+  font-size: 14px;
+}
+.actContent .listpage .oneAct .linkbtn {
+  position: relative;
+  display: block;
+  width: 325px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #ff7900;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  -moz-border-radius: 17.5px;
+  -webkit-border-radius: 17.5px;
+  border-radius: 17.5px;
+  margin-left: 10px;
+  margin-top: 22px;
+  /*background:url(../images/btnbg.png) no-repeat;*/
+}
+.actContent .pageList {
+  float: right;
+  margin-right: 10px;
+}
+.actContent .pageList a {
+  float: left;
+  margin-right: 5px;
+  padding: 3px 7px;
+  color: #616161;
+  border: 1px solid #d5d5d5;
+  background-color: #fff;
+}
+.actContent .pageList a:hover {
+  text-decoration: none;
+  border-color: #e47b3a;
+  color: #fff;
+  background-color: #e47b3a;
+}
+.actContent .pageList span {
+  float: left;
+  margin-right: 5px;
+  padding: 3px 7px;
+  background-color: #e47b3a;
+  border: 1px solid #d9d9d9;
+  text-decoration: none;
+  border-color: #e47b3a;
+  color: #fff;
+}
+.actContent .pageList .total {
+  float: left;
+  color: #fff;
+  margin-left: 10px;
+  line-height: 28px;
+}
+.actContent .nextPage {
+  padding: 0 20px;
+  width: auto;
+  margin-bottom: 0;
+}
+.actContent .lastPage {
+  background: url(../images/prev.png) left center no-repeat;
+}
+.actContent .nextNews {
+  background: url(../images/next.png) right center no-repeat;
+}
+.actContent .linkTrun {
+  font-size: 14px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+}
+.actContent .linkTrun a {
+  line-height: 18px;
+  color: #fff;
+}
+.actContent .linkTrun a > img {
+  margin-top: -2px;
+}
+.actContent .linkTrun a:hover {
+  text-decoration: underline;
+}
+.actContent .linkTrun .leftico {
+  width: 14px;
+  height: 17px;
+  background: url(../images/prev.png) no-repeat;
+}
+.actContent .linkTrun .rightico {
+  width: 14px;
+  height: 17px;
+  background: url(../images/next.png) no-repeat;
+}
+.actContent .infoList {
+  padding: 0 12px;
+  border: 1px solid #f0f0f0;
+}
+.actContent .infoList dl {
+  margin: 0;
+  padding: 20px 0;
+  border-top: 1px solid #e3e3e3;
+  overflow: hidden;
+}
+.actContent .infoList dl:first-child {
+  border-top: none;
+}
+.actContent .infoList dl dt {
+  float: left;
+}
+.actContent .infoList dl dt img {
+  margin-left: 8px;
+  margin-right: 15px;
+  border: 1px solid #e3e3e3;
+}
+.actContent .infoList dl dd {
+  margin: 0;
+  padding-right: 8px;
+  overflow: hidden;
+  font-family: SimSun;
+}
+.actContent .infoList dl h2 {
+  position: relative;
+  margin: 0;
+  height: 24px;
+  font-size: 16px;
+}
+.actContent .infoList dl h2 a {
+  width: 750px;
+  max-width: 750px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #4a4a4a;
+  text-decoration: none;
+  font-family: SimSun;
+}
+.actContent .infoList dl h2 a:hover {
+  color: #000;
+}
+.actContent .infoList dl h2 span {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  color: #757575;
+}
+.actContent .infoList dl p {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  max-height: 60px;
+  line-height: 20px;
+  color: #757575;
+  margin: 4px 0 11px 0;
+}
+.actContent .infoList dl .more {
+  position: relative;
+  display: block;
+  width: 96px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ff7900;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  margin-top: 10px;
+  /*background:url(../images/reading.png) no-repeat;*/
+}
+/*# sourceMappingURL=actnews.css.map */

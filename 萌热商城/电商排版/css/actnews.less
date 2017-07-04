@@ -1,0 +1,307 @@
+﻿@import "function.less";
+/*活动和咨询*/
+@dateColor: #757575;
+@border: 1px solid #e3e3e3;
+@shareIco: "../images/share.png";
+@pageBtnColor: #e47b3a;
+@pageColor: #616161;
+
+/*.mainMarginBottom {
+    padding-bottom: 188px;
+}*/
+
+.actContent {
+    width: 100%;
+    max-width: 1060px;
+    //详情页样式
+    .content {
+        border: 1px solid #f0f0f0;
+        border-top: none;
+        position: relative;
+        font-family: SimSun;
+
+        .detailsTitle {
+            font-size: 16px;
+            text-align: center;
+            padding-top: 32px;
+            color: #4a4a4a;
+            width: 100%;
+            font-family: SimSun;
+        }
+
+        .subtitle {
+            width: 100%;
+            text-align: center;
+            color: @dateColor;
+            padding-top: 7px;
+
+            .date {
+                margin-right: 24px;
+            }
+
+            .flow {
+            }
+        }
+        //活动详情的正文部分
+        .wordBody {
+            margin: 16px 12px 0 12px;
+            border-top: 1px solid #f0f0f0;
+            border-bottom: 1px solid #f0f0f0;
+            padding: 10px 28px;
+        }
+        //活动中心的分享
+        .share {
+            width: 100%;
+            height: 48px;
+            margin-top: 14px;
+            margin-right: 8px;
+            margin-bottom: 18px;
+            position: relative;
+
+            span {
+                font-size: 14px;
+                margin-right: 4px;
+                display: block;
+                line-height: 48px;
+            }
+
+            .oneIco(@index) {
+                display: block;
+                width: 48px;
+                height: 48px;
+                margin-right: 20px;
+                background-image: url(@shareIco);
+                background-position: 48px * @index 0;
+            }
+
+            .weChatIco {
+                .oneIco(3);
+            }
+
+            .qqIco {
+                .oneIco(2);
+            }
+
+            .sinaIco {
+                .oneIco(1);
+            }
+        }
+    }
+    //列表页样式
+    .listpage {
+        position: relative;
+        margin-right: -12px;
+        margin-top: 11px;
+
+        .oneAct {
+            width: 343px;
+            height: 243px;
+            border: 1px solid #f0f0f0;
+            margin-bottom: 10px;
+            margin-right: 12px;
+
+            .actimg {
+                display: block;
+                width: 325px;
+                height: 104px;
+                margin-top: 9px;
+                margin-left: 9px;
+
+                img {
+                    width: 325px;
+                    height: 104px;
+                }
+            }
+
+            .acttitle {
+                display: block;
+                margin-top: 22px;
+                width: 325px;
+                padding: 0 9px;
+                text-align: center;
+                font-size: 16px;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .actSub {
+                width: 325px;
+                padding: 0 9px;
+                text-align: center;
+                color: @dateColor;
+                font-size: 14px;
+            }
+
+            .linkbtn {
+                .ShowOrangeBtn(325px,35px,16px);
+                margin-left: 10px;
+                margin-top: 22px;
+                /*background:url(../images/btnbg.png) no-repeat;*/
+            }
+        }
+    }
+    //分页(咨询中心公用)
+    .pageList {
+        float: right;
+        margin-right: 10px;
+
+        a {
+            float: left;
+            margin-right: 5px;
+            padding: 3px 7px;
+            color: @pageColor;
+            border: 1px solid #d5d5d5;
+            background-color: #fff;
+
+            &:hover {
+                text-decoration: none;
+                border-color: @pageBtnColor;
+                color: #fff;
+                background-color: @pageBtnColor;
+            }
+        }
+
+        span {
+            float: left;
+            margin-right: 5px;
+            padding: 3px 7px;
+            background-color: @pageBtnColor;
+            border: 1px solid #d9d9d9;
+            text-decoration: none;
+            border-color: @pageBtnColor;
+            color: #fff;
+        }
+
+        .total {
+            float: left;
+            color: #fff;
+            margin-left: 10px;
+            line-height: 28px;
+        }
+    }
+    //上一篇/下一篇
+    .nextPage{
+        padding:0 20px;
+        width:auto;
+        margin-bottom:0;
+    }
+    .lastPage{
+        background:url(../images/prev.png) left center no-repeat;
+    }
+    .nextNews{
+        background:url(../images/next.png) right center no-repeat;
+    }
+    .linkTrun {
+        font-size: 14px;
+        padding-left: 25px;
+        padding-right: 25px;
+        color:#fff;
+
+        a {
+            line-height: 18px;
+            color: #fff;
+            >img{
+                margin-top:-2px;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .leftico {
+            width: 14px;
+            height: 17px;
+            background: url(../images/prev.png) no-repeat;
+        }
+
+        .rightico {
+            width: 14px;
+            height: 17px;
+            background: url(../images/next.png) no-repeat;
+        }
+    }
+    //资讯列表
+    .infoList {
+        padding: 0 12px;
+        border: 1px solid #f0f0f0;
+
+        dl {
+            margin: 0;
+            padding: 20px 0;
+            border-top: @border;
+            overflow: hidden;
+
+            &:first-child {
+                border-top: none;
+            }
+
+            dt {
+                float: left;
+
+                img {
+                    margin-left: 8px;
+                    margin-right: 15px;
+                    border: @border;
+                }
+            }
+
+            dd {
+                margin: 0;
+                padding-right: 8px;
+                overflow: hidden;
+                font-family: SimSun;
+            }
+
+            h2 {
+                position: relative;
+                margin: 0;
+                height: 24px;
+                font-size: 16px;
+
+                a {
+                    width: 750px;
+                    max-width: 750px;
+                    display: block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: #4a4a4a;
+                    text-decoration: none;
+                    font-family: SimSun;
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+
+                span {
+                    display: block;
+                    font-size: 12px;
+                    font-weight: normal;
+                    color: @dateColor;
+                }
+            }
+
+            p {
+                overflow: hidden;
+                display: -webkit-box;
+                text-overflow: ellipsis;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                max-height: 60px;
+                line-height: 20px;
+                color: @dateColor;
+                margin:4px 0 11px 0;
+            }
+
+            .more {
+                .ShowOrangeBtn(96px,30px,12px);
+                margin-top: 10px;
+                /*background:url(../images/reading.png) no-repeat;*/
+            }
+        }
+    }
+}
