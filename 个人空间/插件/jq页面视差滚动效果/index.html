@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人主页</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<script src="jquery-2.min.js"></script>
+<script src="parallax.min.js"></script>
+<style>
+body{
+	height: 3200px;
+}
+.kong{
+	height: 500px;
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;/*背景色透明 */
+}
+.parallax-window2 {
+    min-height: 600px;
+    background: transparent;
+}
+</style>
+</head>
+<body>
+	<div class="kong"></div>
+	<div class="parallax-window" data-bleed="10" data-parallax="scroll" data-image-src="images/bg-main.jpg" data-naturalWidth="1920" data-naturalHeight="1427">
+		<p>	sdnaudahsudahsuhaiudhisha</p>
+	</div>
+	<div class="kong"></div>
+	<div class="parallax-window2" data-bleed="10" data-parallax="scroll" data-image-src="images/helix-nebula-1400x1400.jpg" data-naturalWidth="1400" data-naturalHeight="1400"></div>
+<script>
+	$('.parallax-window').parallax({imageSrc: 'images/bg-main.jpg'});
+	$('.parallax-window2').parallax({imageSrc: 'images/helix-nebula-1400x1400.jpg'});
+</script>
+</body>
+</html>
