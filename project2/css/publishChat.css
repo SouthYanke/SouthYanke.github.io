@@ -36,29 +36,28 @@
 		#content{
 			padding-top: 0.88rem;
 			background-color: white;
-			height: 4.75rem;
-			position: relative;
+			/* height: 4.75rem; */
+			/* position: relative; */
 		}
 		#content_text{
 			resize: none;
-			height: 4.55rem;
+			height: 2.27rem;
 			padding: 0.1rem 0.2rem;
 			color: #c1c1c1;
 			font-size: 0.28rem;
 			width: 7.09rem;
 		}
 		#content_bottom{
-			position: absolute;
+			/* position: absolute;
 			bottom: 0.2rem;
-			left: 0.1rem;
+			left: 0.1rem; */
 			overflow: hidden;
+			padding-bottom: 0.21rem;
 		}
 		#content_bottom *{
-			float: left;
+			/* float: left; */
 		}
 		.bitmap{
-			background: url('../images/bitmap.png') no-repeat;
-			background-size: cover;
 			width: 1.86rem;
 			height: 1.86rem;
 		}
@@ -74,6 +73,8 @@
 			margin-left: 0.35rem;
 			font-size: 0.2rem;
 			color: #c1c1c1;
+			width:1.8rem;
+			float: left;
 		}
 		#loc{
 			font-size: 0.28rem;

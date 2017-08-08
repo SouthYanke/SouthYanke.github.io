@@ -108,9 +108,22 @@
 			right: 0;
 		}
 		.upvote{
-			margin-right: 0.2rem;
+			position: absolute;
+			bottom: 0;
+			right: 0.4rem;
 			width: 0.24rem;
 			height: 0.24rem;
+			background:url(../images/upvote.png) center center no-repeat;
+			background-size:0.24rem 0.24rem;
+		}
+		.upvote2{
+			position: absolute;
+			bottom: 0;
+			right: 0.4rem;
+			width: 0.24rem;
+			height: 0.24rem;
+			background:url(../images/AVQ@VUSZD4517[ORS[8I1KM.png) center center no-repeat;
+			background-size:0.24rem 0.24rem;
 		}
 		.reply{
 			width: 0.24rem;

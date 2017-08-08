@@ -10,9 +10,90 @@
 	<link rel="stylesheet" href="../../css/pub.css">
 	<link rel="stylesheet" href="../../css/exchangeInfo.css">
 	<script type="text/javascript" src="../../js/suit.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+
+	<style>
+		#affirm{
+			position: fixed;
+			left:0;
+			right:0;
+			top:4.1rem;
+			width:5.2rem;
+			height:3.5rem;
+			margin:0 auto;
+			background-color: #fff;
+			border-radius: 0.2rem;
+			z-index: 999;
+			text-align: center;
+			display: none;
+		}
+		#affirm img{
+			width:1rem;
+			height:1rem;
+			border-radius:50%;
+			margin-top: 0.4rem;
+			margin-bottom:  0.2rem;
+		}
+		#affirm span{
+			font-size: 0.25rem;
+		}
+		#ififif{
+			width:100%;
+			height:1.45rem;
+		}
+		#cancel{
+			width:1.9rem;
+			height:0.7rem;
+			float: left;
+			margin-left: 0.5rem;
+			margin-top: 0.35rem;
+			font-size: 0.3rem;
+			border:0.01rem #ccc solid;
+			border-radius:0.1rem;
+			line-height: 0.7rem;
+			color:#3c3c3c;
+		}
+		#countersign{
+			width:1.9rem;
+			height:0.7rem;
+			float: right;
+			margin-right: 0.5rem;
+			margin-top: 0.35rem;
+			font-size: 0.3rem;
+			border:0.01rem #ccc solid;
+			border-radius:0.1rem;
+			line-height: 0.7rem;
+			background-color: #ff8901;
+			color:#fff;
+		}
+		#masking{
+			position: fixed;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			z-index: 888;
+			display: none;
+		}
+	</style>
 </head>
 <body>
 	<div id="wrap">
+		<div id="affirm">
+			<div>
+				<img src="../../images/img矢量智能对象@2x.png" alt="">
+			</div>
+			<div>
+				<span>确认兑换</span>
+			</div>
+			<div id="ififif">
+				<div id="cancel">取消</div>
+				<a href="##">
+					<div id="countersign">确认</div>
+				</a>
+			</div>
+		</div>
+		<img src="../../images/bg_2@2x (2).png" alt="" id="masking">
 		<div id="header">
 			<a href="./marketMain.html"><img id="prev" src="../../images/prev.png"></img></a>			
 			兑换物品详情
@@ -33,8 +114,28 @@
 				<h2 id="tel">客服电话</h2>
 				<h4>**********</h4>
 			</div>
-			<div id="bottom">兑换花费<var>6000积分</var></div>
+			<!-- <div id="bottom">兑换花费<var>6000积分</var></div> -->
 		</div>
 	</div>
+	<script>
+	fn();
+	function fn(){
+		var flag1=$('#cost').text();
+		var flag2=10000;
+		if (flag2>flag1) {
+			$("#costBTN").css('background-color','#f9c8a7')
+			$('#costBTN').click(function(){
+				$('#affirm').css('display','block')
+				$('#masking').css('display','block')
+				$('#cancel').click(function(){
+					$('#affirm').css('display','none')
+					$('#masking').css('display','none')
+				})
+			})
+		} else{
+			$("#costBTN").css('background-color','#ccc')
+		};
+	}
+	</script>
 </body>
 </html>

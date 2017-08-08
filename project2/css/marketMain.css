@@ -67,6 +67,12 @@ h3{
 #content_info li img{
 	height: 1.6rem;
 }
+#content_info .picture{
+	width:1.11rem;
+	height:1.24rem;
+	margin-top:0.15rem;
+	margin-left: 0.2rem;
+}
 #content_info li div{
 	position: absolute;
 	width: 1.82rem;

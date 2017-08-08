@@ -145,6 +145,18 @@
 .upvote{
 	width: 0.24rem;
 	height: 0.24rem;
+	float: left;
+	margin-left: 3.75rem;
+	background:url(../images/upvote.png) center center no-repeat;
+			background-size:0.24rem 0.24rem;
+}
+.upvote2{
+	width: 0.24rem;
+	height: 0.24rem;
+	float: left;
+	margin-left: 3.75rem;
+	background:url(../images/AVQ@VUSZD4517[ORS[8I1KM.png) center center no-repeat;
+			background-size:0.24rem 0.24rem;
 }
 .reply{
 	width: 0.24rem;

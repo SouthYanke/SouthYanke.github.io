@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="../../css/swiper.min.css">
 	<link rel="stylesheet" href="../../css/shareMain.css">
 	<script type="text/javascript" src="../../js/suit.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
 </head>
 <body>
 	<div id="wrap">
@@ -35,14 +36,17 @@
 								<div class="info_time"><var>1</var>小时前</div>
 							</div>
 						</div>
-						<div class="content_info">
-							<div class="content_text">同学!永远是我们一生中的特殊群体，他比亲人多了些熟知，比朋友 多了些亲切。感谢同学，给了我那段不寻常的记忆，感谢生活，给 了我</div>
-						</div>
-						<ul class="imgList">
-							<li class="imgs"></li>
-						</ul>
+						<a href="./shareInfo.html">
+							<div class="content_info">
+								<div class="content_text">同学!永远是我们一生中的特殊群体，他比亲人多了些熟知，比朋友 多了些亲切。感谢同学，给了我那段不寻常的记忆，感谢生活，给 了我</div>
+							</div>
+							<ul class="imgList">
+								<li class="imgs"></li>
+							</ul>
+						</a>
 						<div class="controll">
-							<img src="../../images/upvote.png" class="upvote">
+							<div class="upvote"></div>
+							<!-- <img src="../../images/upvote.png" class="upvote"> -->
 							<img src="../../images/reply.png" class="reply">
 							<img src="../../images/relay.png" class="relay">
 						</div>
@@ -63,7 +67,8 @@
 							<li class="imgs"></li>
 						</ul>
 						<div class="controll">
-							<img src="../../images/upvote.png" class="upvote">
+							<div class="upvote"></div>
+							<!-- <img src="../../images/upvote.png" class="upvote"> -->
 							<img src="../../images/reply.png" class="reply">
 							<img src="../../images/relay.png" class="relay">
 						</div>
@@ -84,7 +89,8 @@
 							<li class="imgs"></li>
 						</ul>
 						<div class="controll">
-							<img src="../../images/upvote.png" class="upvote">
+							<div class="upvote"></div>
+							<!-- <img src="../../images/upvote.png" class="upvote"> -->
 							<img src="../../images/reply.png" class="reply">
 							<img src="../../images/relay.png" class="relay">
 						</div>
@@ -107,7 +113,8 @@
 							<li class="imgs"></li>
 						</ul>
 						<div class="controll">
-							<img src="../../images/upvote.png" class="upvote">
+							<div class="upvote"></div>
+							<!-- <img src="../../images/upvote.png" class="upvote"> -->
 							<img src="../../images/reply.png" class="reply">
 							<img src="../../images/relay.png" class="relay">
 						</div>
@@ -128,7 +135,8 @@
 							<li class="imgs"></li>
 						</ul>
 						<div class="controll">
-							<img src="../../images/upvote.png" class="upvote">
+							<div class="upvote"></div>
+							<!-- <img src="../../images/upvote.png" class="upvote"> -->
 							<img src="../../images/reply.png" class="reply">
 							<img src="../../images/relay.png" class="relay">
 						</div>
@@ -149,7 +157,8 @@
 							<li class="imgs"></li>
 						</ul>
 						<div class="controll">
-							<img src="../../images/upvote.png" class="upvote">
+							<div class="upvote"></div>
+							<!-- <img src="../../images/upvote.png" class="upvote"> -->
 							<img src="../../images/reply.png" class="reply">
 							<img src="../../images/relay.png" class="relay">
 						</div>
@@ -161,6 +170,11 @@
 	<script src="../../js/jquery.js"></script>
 	<script type="text/javascript" src="../../js/swiper.min.js"></script>
 	<script type="text/javascript" src="../../js/shareMain.js"></script>
-	
+	<script>
+		$('.upvote').click(function(){
+			$(this).removeClass()
+			$(this).addClass('upvote2')
+		})
+	</script>
 </body>
 </html>
