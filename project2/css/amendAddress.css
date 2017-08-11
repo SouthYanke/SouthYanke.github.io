@@ -1,0 +1,113 @@
+#header{
+			width: 7.5rem;
+			height: 0.88rem;
+			background-color: #f9c8a7;
+			color: #FFFFFF;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 999;
+			font-size: 0.34rem;
+			text-align: center;
+			line-height: 0.88rem;
+			overflow: hidden;
+		}
+		#header *{
+			float: left;
+		}
+		#header #header_left {
+			width: 0.8rem;
+			height: 0.88rem;
+			position: absolute;
+			top: 0rem;
+			left:0rem;
+		}
+		#prev{
+			width: 0.28rem;
+			height: 0.38rem;
+			margin:0.25rem 0 0 0.2rem;
+		}
+		#name{
+			margin:0 auto;
+			margin-top:1rem;
+			width:90%;
+			overflow: hidden;
+		}
+		#name p{
+			font-size: 0.25rem;
+			margin-top: 0.3rem;
+			color:#3d3d3d;
+		}
+		#name_int{
+			margin-top: 0.2rem;
+			width:98%;
+			height:0.5rem;
+			padding-left: 0.1rem;
+			border:0.01rem #999 solid;
+		}
+		#tel{
+			margin:0 auto;
+			margin-top:0.2rem;
+			width:90%;
+			overflow: hidden;
+		}
+		#tel p{
+			font-size: 0.25rem;
+			color:#3d3d3d;
+		}
+		#tel_int{
+			margin-top: 0.2rem;
+			width:98%;
+			height:0.5rem;
+			padding-left: 0.1rem;
+			border:0.01rem #999 solid;
+		}
+		#address{
+			width:90%;
+			margin:0 auto;
+			margin-top:0.2rem;
+			overflow: hidden;
+			font-size: 0.25rem;
+		}
+		#address h2{
+			font-size: 0.35rem;
+
+		}
+		.cityList{
+			width:100%;
+		}
+		select{
+			width:87.5%;
+			border:0.01rem #999 solid;
+			margin-top:0.2rem;
+			height:0.5rem;
+		}
+		#row{
+			width:90%;
+			margin:0 auto;
+			margin-top:0.2rem;
+			overflow: hidden;
+			font-size: 0.25rem;
+		}
+		#row span{
+			float: left;
+			margin-top:0.2rem;
+		}
+		textarea{
+			width:86.5%;
+			border:0.01rem #999 solid;
+			margin-top:0.2rem;
+			height:2rem;
+		}
+		#button{
+			width:90%;
+			height:0.8rem;
+			background-color:#cb0000;
+			margin:0 auto;
+			margin-top: 0.3rem;
+			border-radius:0.1rem;
+			font-size: 0.3rem;
+			color:#fff;
+			line-height: 0.8rem;
+			text-align: center;
+		}

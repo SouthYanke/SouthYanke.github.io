@@ -1,5 +1,5 @@
 #wrap{
-	/* background-color: #f0efed; */
+	background-color: #f0efed;
 }
 #header{
 	width: 7.5rem;
@@ -104,8 +104,8 @@
 #tel{
 	margin-top: 0.5rem;
 }
-/* #bottom{
-	border-top: 0.0rem solid #b5b5b5;
+#bottom{
+	border-top: 0.01rem solid #b5b5b5;
 	text-align: right;
 	font-size: 0.3rem;
 	color: black;
@@ -114,9 +114,9 @@
 	padding-right: 0.22rem;
 	background-color: white;
 	display: none;
-} 
+}
 #bottom var{
 	margin-left: 0.15rem;
 	color: #ffa264;
 	font-size: 0.34rem;
-} */
+}

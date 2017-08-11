@@ -11,23 +11,34 @@
 	<link rel="stylesheet" href="../../css/publishChat.css">
 	<script type="text/javascript" src="../../js/suit.js"></script>
 	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
-	
 	<style>
-		.add{
-			width: 1.86rem;
-			height: 1.86rem;
+		#content_import{
+			background-color: #fff;
+			overflow: hidden;
+			margin-top: 0.88rem;
+		}
+		#content_text{
+			height:3rem;
+		}
+		#picture{
+			width:100%;
+			float: left;
+			margin-bottom: 0.21rem;
+		}
+		#picture .add{
+			width:1.1rem;
+			height:1.1rem;
 			float: left;
 			margin-left: 0.21rem;
 			margin-top: 0.21rem;
-			border:0.01rem #787878 solid;
-			background: url(../../images/bitmap.png) center center no-repeat;
-			background-size:1.86rem 1.86rem;
+			border:0.01rem #797979 solid;
+			background-image: url(../../images/add2.png);
+			background-size:1.09rem 1.09rem;
 			position: relative;
-			overflow: hidden;
 		}
 		.add .file_input{
-			width: 1.86rem;
-			height: 1.86rem;
+			width:1.1rem;
+			height:1.1rem;
 			position: absolute;
 			left:0.01rem;
 			top:0.01rem;
@@ -35,41 +46,135 @@
 			z-index: 999;
 		}
 		.add .rrr{
-			width: 1.86rem;
-			height: 1.86rem;
+			width:1.1rem;
+			height:1.1rem;
 			position: absolute;
 			left:0.01rem;
 			top:0.01rem;
 		}
 		.add .rrr img{
-			width:1.86rem;
-			height:1.86rem;
+			width:1.1rem;
+			height:1.1rem;
+		}
+		#picture span{
+			float: left;
+			margin-top: 0.99rem;
+			font-size: 0.24rem;
+			font-family: PingFang;
+			color:#e4e4e4;
+			margin-left: 0.1rem;
 		}
 	</style>
 </head>
 <body>
 	<div id="wrap">
-		<div id="top">
-			<img id="prev" src="../../images/prev.png"></img>
-			<div id="top_text">聊天吹水</div>
-			<div id="top_btn">发布</div>
+		<div id="header">
+			<a id="header_left" href="./chatMain.html"><img id="prev" src="../../images/prev.png"></img></a>			
+			聊天吹水
 		</div>
-		<div id="content">
-			<textarea id="content_text">说点什么吧...</textarea>
-			<div id="content_bottom">
-				<!-- <div class="bitmap"></div> -->
-				<div class="add">
-					<input type="file" class="file_input" class="bitmap" capture="photo" multiple/>
-	                <div class="rrr"></div>
+		<!--====以下改了====-->
+			<div id="content_import">
+				<textarea id="content_text" placeholder="说点什么吧..."></textarea>
+				<div id="picture">
+					<div class="add">
+						<input type="file" class="file_input" capture="camera" multiple>
+		                <div class="rrr"></div>
+					</div>
+					<span>最多添加9张图片</span>
 				</div>
-				<span class="bottom_text">(最多添加9张图片)</span>
 			</div>
-		</div>
+			<!--====到这为止====-->
 		<div id="loc">地点</div>
 		<div id="publishBTN">发布</div>
 	</div>
-	<script type="text/javascript" src="../../js/publishChat.js"></script>
 	<script>
+		// 添加图片的
+	picture();
+	function picture(){
+		//获取图片路劲的方法，兼容多种浏览器，通过createObjectURL实现
+		var aaa = document.getElementsByClassName("rrr"); //获取显示图片的div元素
+		var input = document.getElementsByClassName("file_input");
+		var count=0;
+		$( "#picture" ).on( "click", ".file_input", function() {
+			if (count<9) {
+				var flag=true;
+			 	for (var v = 0; v < input.length; v++) {
+			 		if (input[v]==this) {
+					 // 获取选择图片的input元素
+				      // 这边是判断本浏览器是否支持这个API。
+						if(typeof FileReader==='undefined'){ 
+						    aaa[v].innerHTML = "抱歉，你的浏览器不支持 FileReader"; 
+						    input[v].setAttribute('disabled','disabled'); 
+						}else{ 
+							var bbb = v;
+						    input[v].addEventListener('change',readFile,false); 
+						    //如果支持就监听改变事件，一旦改变了就运行readFile函数。
+						} 
+						function readFile(){ 
+						    var file = this.files[0]; //获取file对象
+						    //判断file的类型是不是图片类型。
+						    if(!/image\/\w+/.test(file.type)){ 
+						        alert("文件必须为图片！"); 
+						        return false; 
+						    } 
+						    if (bbb==input.length-1) {
+							    if (count<8) {
+								    if (flag) {
+								   		$(this).parent().after('<div class="add"><input type="file" class="file_input" capture="photo"><div class="rrr"></div></div>');
+								   		count++;
+								   		flag=false;
+							   		};
+							   	};
+						   	};
+						    var reader = new FileReader(); //声明一个FileReader实例
+						    reader.readAsDataURL(file); //调用readAsDataURL方法来读取选中的图像文件
+						    //最后在onload事件中，获取到成功读取的文件内容，并以插入一个img节点的方式显示选中的图片
+						    reader.onload = function(e){ 
+						        aaa[bbb].innerHTML = '<img src="'+this.result+'" alt=""/>' ;
+							}
+						}			
+					}
+				}
+			}
+		})
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	function fn(){
+
+
 		document.addEventListener('touchend',function(e){
 			if(e.target.id=='top_btn'||e.target.id=='publishBTN'){
 				self.location='./chatInfo.html'
@@ -84,6 +189,7 @@
 		// loc.addEventListener('touchstart',function(){
 		// 	self.location='../html/chatMain.html';
 		// })
+}
 	</script>
 </body>
 </html>

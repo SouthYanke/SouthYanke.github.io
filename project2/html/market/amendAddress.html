@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/pub.css">
+	<link rel="stylesheet" href="../../css/amendAddress.css">
+	<script type="text/javascript" src="../../js/suit.js"></script>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div id="header">
+		<a id="header_left" href="./addAddress.html">
+			<img id="prev" src="../../images/prev.png"></img>
+		</a>添加收货地址
+	</div>
+	<div id="name">
+		<p>收货人姓名</p>
+		<input type="text" name="" value="" id="name_int">
+	</div>
+	<div id="tel">
+		<p>收货人手机号</p>
+		<input type="tel" name="" value="" id="tel_int">
+	</div>
+	<div id="address">
+		<h2>收货地址</h2>
+		<div class="cityList">
+			<label for="sheng">省份：</label>
+			<select id="sheng">
+				<option value="-1">请选择</option>
+			</select><br>
+			<label for="shi">城市：</label>
+			<select id="shi">
+				<option value="-1">请选择</option>
+			</select><br>
+			<label for="qu">区县：</label>
+			<select id="qu">
+				<option value="-1">请选择</option>
+			</select>
+		</div>
+	</div>
+	<div id="row">
+		<span>街道：</span>
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+	</div>
+	<a href="./addAddress.html"><div id="button">添加新地址</div></a>
+	<script type="text/javascript" src="../../js/citylist.js"></script>
+	<script>
+	var sheng=document.getElementById('sheng');
+	var shi=document.getElementById('shi');
+	var qu=document.getElementById('qu');
+	// console.log(json.citylist[0].p);//北京  获取示例
+	// console.log(json.citylist[0].c[0].n)//东城区  获取示例
+	// console.log(json.citylist.length);//35  获取示例
+	var opt1='<option value="-1">请选择</option>';
+	for (var i = 0; i <json.citylist.length; i++) {//省份初始值
+		opt1=opt1+'<option value="'+i+'">'+json.citylist[i].p+'</option>';
+		sheng.innerHTML=opt1;
+	}
+	sheng.onchange=function (){//选择省份后
+		var opt2='<option value="-1">请选择</option>';//初始值
+		qu.innerHTML=opt2;
+		if(sheng.value==-1){
+			shi.innerHTML=opt2;
+		}else{
+			if (json.citylist[sheng.value].c[0].a) {//是省份执行这
+				for (var i = 0; i <json.citylist[sheng.value].c.length; i++) {
+					opt2=opt2+'<option value="'+i+'">'+json.citylist[sheng.value].c[i].n+'</option>';
+					shi.innerHTML=opt2;
+				}
+			} else{//是直辖市执行这
+				opt2=opt2+'<option value="0">'+json.citylist[sheng.value].p+'</option>';
+				shi.innerHTML=opt2;
+			};
+		}
+	}
+	shi.onchange=function (){//选择城市后
+		var opt3='<option value="-1">请选择</option>';//初始值
+		if(shi.value==-1){
+			qu.innerHTML=opt3;
+		}else{
+			if (json.citylist[sheng.value].c[0].a) {//是省份执行这
+				for (var i = 0; i <json.citylist[sheng.value].c[shi.value].a.length; i++) {
+					opt3=opt3+'<option value="'+i+'">'+json.citylist[sheng.value].c[shi.value].a[i].s+'</option>';
+					qu.innerHTML=opt3;
+				}
+			} else{//是直辖市执行这
+				for (var i = 0; i <json.citylist[sheng.value].c.length; i++) {
+					opt3=opt3+'<option value="'+i+'">'+json.citylist[sheng.value].c[i].n+'</option>';
+					qu.innerHTML=opt3;
+				}
+			};
+		}
+	}
+</script>
+</body>
+</html>
