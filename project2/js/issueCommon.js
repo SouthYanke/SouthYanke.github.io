@@ -1,21 +1,21 @@
 
 		var prev=document.getElementById('prev');
 		var AA=document.getElementById('AA');
-		var AABOX=document.getElementById('AABOX');
+		var AABOX=document.getElementById('radio1');
 		var MY=document.getElementById('MY');
-		var MYBOX=document.getElementById('MYBOX');
+		var MYBOX=document.getElementById('radio2');
 		var prev=document.getElementById('prev');
 		var p=document.getElementById('publishBTN');
 		prev.addEventListener('touchstart',function(){
 			window.history.back();
 		})
-		AABOX.addEventListener('touchstart',function(){
+		$('#radio1').click(function(){
 			AA.className='full';
-			MY.className='empty';
+		 	MY.className='empty';
 		})
-		MYBOX.addEventListener('touchstart',function(){
+		$('#radio2').click(function(){
 			MY.className='full';
-			AA.className='empty';
+		 	AA.className='empty';
 		})
 		p.addEventListener('touchstart',function(){
 			self.location='myCommon.html';

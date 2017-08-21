@@ -79,6 +79,14 @@ h3{
 	font-size: 0.24rem;
 	color: black;
 	margin-bottom: 0.2rem;
+	height:0.6rem;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+	overflow: hidden;
+	line-height: 0.3rem;
+	word-wrap:break-word;
+	
 }
 #content_info h2{
 	font-size: 0.24rem;

@@ -1,7 +1,7 @@
-$(".swiper-slide").on("click",".otherShare",function (){
-	self.location='./shareInfo.html';
-	// alert(1);
-})
+// $(".swiper-slide").on("click",".otherShare",function (){
+// 	self.location='./shareInfo.html';
+// 	// alert(1);
+// })
 
 
 
