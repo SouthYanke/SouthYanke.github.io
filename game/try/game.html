@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<script src="./jquery.js"></script>
+	<style>
+		#warp{
+			width:700px;
+			height:500px;
+			border:1px #000 solid;
+			margin: 0 auto;
+			margin-top: 50px;
+			position: relative;
+			overflow: hidden;
+		}
+		#hook{
+			width:50px;
+			height:50px;
+			border:1px #000 solid;
+			position: absolute;
+			top:80px;
+			left:325px;
+			animation-fill-mode:forwards;
+			animation:up 3s linear infinite;
+			transform: rotate(0deg);
+			transform-origin:25px -40px;
+			animation-play-state:running;
+			position: relative;
+		}
+		#over{
+			width:70px;
+			height:30px;
+			border:1px #000 solid;
+			position: absolute;
+			top:0px;
+			left:0px;
+			font-size: 15px;
+			line-height: 30px;
+			text-align: center;
+			display: none;
+		}
+		@keyframes up{
+			0%{transform: rotate(0deg)}
+			25%{transform: rotate(70deg)}
+			50%{transform: rotate(0deg)}
+			75%{transform: rotate(-70deg)}
+			100%{transform: rotate(0deg)}
+		}
+		#rubbish1{
+			width:70px;
+			height:30px;
+			border:1px #000 solid;
+			position: absolute;
+			top:300px;
+			left:-75px;
+			font-size: 15px;
+			line-height: 30px;
+			text-align: center;
+		}
+		#rubbish2{
+			width:70px;
+			height:30px;
+			border:1px #000 solid;
+			position: absolute;
+			top:300px;
+			left:-75px;
+			font-size: 15px;
+			line-height: 30px;
+			text-align: center;
+		}
+		#rubbish3{
+			width:70px;
+			height:30px;
+			border:1px #000 solid;
+			position: absolute;
+			top:300px;
+			left:-75px;
+			font-size: 15px;
+			line-height: 30px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="warp">
+		<div id="hook">
+			<div id="over"></div>
+		</div>
+		<div id="rubbish1">我是垃圾1</div>
+		<div id="rubbish2">我是垃圾2</div>
+		<div id="rubbish3">我是垃圾3</div>
+	</div>
+	<script>
+		var arr1=[1000,-1000,1000,-1000];
+		var flag=false;
+		var count = 0;
+		claw();//执行钩子的函数
+		function claw(){
+			var timer,timer2=null;
+			var deg;
+			
+			var hook = document.getElementById('hook');
+			$('#warp').click(function(){  //点击屏幕，出钩子
+		    	$('#hook').css('animation-play-state','paused')  //钩子停止旋转
+				function getmatrix(a,b,c,d,e,f){  //获取当前钩子的角度
+			        var aa=Math.round(180*Math.asin(a)/ Math.PI);  
+			        var bb=Math.round(180*Math.acos(b)/ Math.PI);  
+			        var cc=Math.round(180*Math.asin(c)/ Math.PI);  
+			        var dd=Math.round(180*Math.acos(d)/ Math.PI);
+			        if(aa==bb||-aa==bb){  
+			            deg=dd;  
+			        }else if(-aa+bb==180){  
+			            deg=180+cc;  
+			        }else if(aa+bb==180){  
+			            deg=-cc||-dd;  
+			        }  
+			        //使绳子长度一定，利用三角函数求出三角形两直角边长度
+			        var sinx=Math.sin(deg*Math.PI/180)*430; 
+			        var cosy=Math.cos(deg*Math.PI/180)*430;
+			        var tt = 80; //初始化纵向直角边长度
+			        var ll = 325; //初始化横向直角边长度
+			        var tim = 200;//定义出手“时间”
+			        var tim2 = 500;//定义收手“时间”
+			        clearInterval(timer);
+			        timer = setInterval(function(){ //出钩子的过程
+			        	//获取钩子位置
+			        	var l1=hook.offsetLeft;
+						var r1=hook.offsetLeft+hook.clientWidth;
+						var t1=hook.offsetTop;
+						var b1=hook.offsetTop+hook.clientHeight;
+						arr1 = [l1,r1,t1,b1];
+			         	$('#warp').css('pointer-events','none'); //出钩子过程中禁止点击
+			         	tt = tt + (cosy/tim);
+			         	ll = ll - (sinx/tim);
+			         	hook.style.top = tt + "px";
+			         	hook.style.left = ll + "px";
+			         	//撞壁反弹
+			         	if (tt>=460||ll<=0||ll>=700||flag) {
+			         		clearInterval(timer);
+			         		clearInterval(timer2);
+			         		timer2=setInterval(function(){
+			         			if (flag) {//抓到东西了
+			         				tt = tt - (cosy/tim2);
+						         	ll = ll + (sinx/tim2);
+						         	hook.style.top = tt + "px";
+						         	hook.style.left = ll + "px";
+			         			}
+			         			else{  //没抓到东西
+			         				tt = tt - (cosy/tim);
+						         	ll = ll + (sinx/tim);
+						         	hook.style.top = tt + "px";
+						         	hook.style.left = ll + "px";
+						         }
+					         	//准备下一次打捞
+					         	if (tt<=80) {
+					         		clearInterval(timer2);
+						         	flag = false;
+					         		$('#over').css('display','none');
+					         		$('#warp').css('pointer-events','auto');
+					         		$('#hook').css('animation-play-state','running');
+				         		};
+					        },10)
+			         	}
+			        },10)
+			    }  
+				var obj=$('#hook');
+			    var deg=eval('get'+obj.css('transform'));//构造getmatrix函数,返回上次旋转度数  
+			    var step=70;//每次旋转多少度  
+			    obj.css({'transform':'rotate('+(deg+step)%360+'deg)'});
+			})
+		}
+		//垃圾循环飘
+		garbage4();
+		function garbage4(){
+			var timer4 = null;
+			var timer5 = null;
+			var timer6 = null;
+			timer4=setInterval(function(){
+				garbage1();
+			},8000)
+			timer5=setInterval(function(){
+				garbage2();
+			},8000)
+			timer6=setInterval(function(){
+				garbage3();
+			},8000)
+		}
+		//垃圾1
+		garbage1();
+		function garbage1(){
+			let rubbish = document.getElementById('rubbish1');
+			let timer3 = null;
+			let flotage = -75;
+			let location =Math.random()*250+150;//随机垃圾1出现的位置
+			clearInterval(timer3);
+			//垃圾1飘啊飘
+			timer3 = setInterval(function(){
+				//获取垃圾1的位置
+				let l2=rubbish.offsetLeft;
+				let r2=rubbish.offsetLeft+rubbish.clientWidth;
+				let t2=rubbish.offsetTop;
+				let b2=rubbish.offsetTop+rubbish.clientHeight;
+				if (flotage<=750) {
+					flotage++;
+					rubbish.style.left = flotage + "px";
+					rubbish.style.top = location + "px";
+					//判断垃圾1是否被抓到了
+					if (arr1[1]<l2||arr1[2]>b2||arr1[0]>r2||arr1[3]<t2) {
+						$('#rubbish1').css('display','block');
+					} else {
+						clearInterval(timer3);
+						$('#over').css('display','block');
+						$('#rubbish1').css('display','none');
+						let txt=$('#rubbish1').text();
+						$('#over').text(txt);
+						flag = true;
+					}
+				}
+			},10)
+		}
+		garbage2();
+		function garbage2(){
+			let rubbish = document.getElementById('rubbish2');
+			let timer3 = null;
+			let flotage = 750;
+			let location =Math.random()*250+150;
+			clearInterval(timer3);
+			timer3 = setInterval(function(){
+				let l2=rubbish.offsetLeft;
+				let r2=rubbish.offsetLeft+rubbish.clientWidth;
+				let t2=rubbish.offsetTop;
+				let b2=rubbish.offsetTop+rubbish.clientHeight;
+
+				if (flotage>=-75) {
+					flotage--;
+					rubbish.style.left = flotage + "px";
+					rubbish.style.top = location + "px";
+					
+					if (arr1[1]<l2||arr1[2]>b2||arr1[0]>r2||arr1[3]<t2) {
+						$('#rubbish2').css('display','block');
+					} else {
+						clearInterval(timer3);
+						$('#over').css('display','block');
+						$('#rubbish2').css('display','none');
+						let txt=$('#rubbish2').text();
+						$('#over').text(txt);
+						flag = true;
+					}
+				}
+			},10)
+		}
+		garbage3();
+		function garbage3(){
+			let rubbish = document.getElementById('rubbish3');
+			let timer3 = null;
+			let flotage = 750;
+			let location =Math.random()*250+150;
+			clearInterval(timer3);
+			timer3 = setInterval(function(){
+				let l2=rubbish.offsetLeft;
+				let r2=rubbish.offsetLeft+rubbish.clientWidth;
+				let t2=rubbish.offsetTop;
+				let b2=rubbish.offsetTop+rubbish.clientHeight;
+
+				if (flotage>=-75) {
+					flotage--;
+					rubbish.style.left = flotage + "px";
+					rubbish.style.top = location + "px";
+					
+					if (arr1[1]<l2||arr1[2]>b2||arr1[0]>r2||arr1[3]<t2) {
+						$('#rubbish3').css('display','block');
+					} else {
+						clearInterval(timer3);
+						$('#over').css('display','block');
+						$('#rubbish3').css('display','none');
+						let txt=$('#rubbish3').text();
+						$('#over').text(txt);
+						flag = true;
+					}
+				}
+			},10)
+		}
+	</script>
+</body>
+</html>
