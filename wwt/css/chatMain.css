@@ -217,9 +217,9 @@ body {
     height: 1.94rem;
 }
 .mui-table-view-cell .licon .licons .liconn{
-	float: left;
+	/* float: left; */
 	overflow: hidden;	
-	margin-left: 0.3rem;
+	margin-left: 2.3rem;
 }
 .mui-table-view-cell .licon .licons .liconn h1{
     font-size: 0.24rem;

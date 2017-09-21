@@ -63,6 +63,9 @@
 	height: 2.22rem;
 	margin-right: 0.18rem;
 }
+.lis_img img{
+	height: 2.22rem;
+}
 .lis .rightBox{
 	float: left;
 	width: 4rem;

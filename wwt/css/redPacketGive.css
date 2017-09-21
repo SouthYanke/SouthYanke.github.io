@@ -43,7 +43,7 @@
 	color:#797979;
 }
 #title #title_ipt{
-	width:3.25rem;
+	width:5.3rem;
 	margin-left: 0.76rem;
 	margin-top: 0.42rem;
 	font-size: 0.24rem;
@@ -137,6 +137,7 @@
 	font-size: 0.28rem;
 	font-family:PingFang;
 	color:#F88690;
+	margin-right: 0.4rem;
 }
 #start .startTime{
 	float: right;
@@ -162,6 +163,7 @@
 	font-size: 0.28rem;
 	font-family:PingFang;
 	color:#F88690;
+	margin-right: 0.4rem;
 }
 #over .startTime{
 	float: right;
