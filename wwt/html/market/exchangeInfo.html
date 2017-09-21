@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>粤人无数</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/pub.css">
+	<link rel="stylesheet" href="../../css/exchangeInfo.css">
+	<script type="text/javascript" src="../../js/suit.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+	<style>
+		#content .exchange2{
+			position: fixed;
+			left:0;
+			top:0.88rem;
+			width:95%;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="affirm">
+			<div>
+				<img src="../../images/img矢量智能对象@2x.png" alt="">
+			</div>
+			<div>
+				<span>确认兑换</span>
+			</div>
+			<div id="ififif">
+				<div id="cancel">取消</div>
+				<a href="./addAddress.html">
+					<div id="countersign">确认</div>
+				</a>
+			</div>
+		</div>
+		<img src="../../images/bg_2@2x (2).png" alt="" id="masking">
+		<div id="header">
+			<a href="./marketMain.html"><img id="prev" src="../../images/prev.png"></img></a>			
+			兑换物品详情
+		</div>
+		<div id="content">
+			<div id="banner">
+				<img id="img1" src="../../images/img_2_@2x.png" alt="">
+				<img id="img2" src="../../images/fdsfewfew.png" alt="">
+				<i>优雅抱枕</i>
+			</div>
+			<div id="exchange">
+				<div id="cost"><var>6000</var></div>
+				<div id="costBTN">立即兑换</div>
+			</div>
+			<div id="goodsInfo">
+				<h1>商品简介:</h1>
+				<h3>清新雅致的一款抱枕，质感厚重，颜色稳重大气，是居家搭配的很 好选择，让家有些改变，我们从抱枕开始！我们用心选择，只为提供更好的产品</h3>
+				<div id="goodsImg">
+					<img src="../../images/img_3_@2x (2).png" alt="">
+				</div>
+				<h2>注意事项:</h2>
+				<h3>1.一经兑换，不能退换货和返还积分</h3>
+				<h3>2.一经兑换，不能退换货和返还积分</h3>
+				
+
+			</div>
+			<!-- <div id="bottom">兑换花费<var>6000积分</var></div> -->
+		</div>
+	</div>
+	<script>
+	fn();
+	function fn(){
+		var flag1=$('#cost').text();
+		var flag2=10000;
+		if (flag2>flag1) {
+			$("#costBTN").css('background-color','#f9c8a7')
+			$('#costBTN').click(function(){
+				$('#affirm').css('display','block')
+				$('#masking').css('display','block')
+				$('#cancel').click(function(){
+					$('#affirm').css('display','none')
+					$('#masking').css('display','none')
+				})
+			})
+		} else{
+			$("#costBTN").css('background-color','#ccc')
+		};
+	}
+
+	$('#costBTN').click(function(){
+		$('#affirm').css('display','block')
+		$('#masking').css('display','block')
+	})
+	$('#cancel').click(function(){
+		$('#affirm').css('display','none')
+		$('#masking').css('display','none')
+	})
+	$(window).scroll(function(){
+		if ($(document).scrollTop()>146) {
+			$("#exchange").addClass("exchange2");
+			$("#goodsInfo").css('margin-top','0.87rem');
+		}else{
+			$("#exchange").removeClass("exchange2");
+			$("#goodsInfo").css('margin-top','0rem');
+		}
+	})
+	</script>
+</body>
+</html>

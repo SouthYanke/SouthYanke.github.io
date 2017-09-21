@@ -1,0 +1,95 @@
+#header{
+			width: 7.5rem;
+			height: 0.88rem;
+			background-color: #f9c8a7;
+			color: #FFFFFF;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 999;
+			font-size: 0.34rem;
+			text-align: center;
+			line-height: 0.88rem;
+			overflow: hidden;
+		}
+		#header *{
+			float: left;
+		}
+		#header #header_left {
+			width: 0.8rem;
+			height: 0.88rem;
+			position: absolute;
+			top: 0rem;
+			left:0rem;
+		}
+		#prev{
+			width: 0.28rem;
+			height: 0.38rem;
+			margin:0.25rem 0 0 0.2rem;
+		}
+		#box{
+			width:100%;
+			margin-top: 0.88rem;
+			margin-bottom: 0.7rem;
+			overflow: hidden;
+		}
+		#box .address{
+			width:90%;
+			/* height:1.5rem; */
+			border:0.01rem #ccc solid;
+			margin: 0 auto;
+			margin-top: 0.3rem;
+			font-size:0.25rem;
+			color:#666;
+		}
+		#box .top{
+			border-bottom:0.01rem #ccc solid;
+			padding:0.2rem;
+			height:100%;
+			
+		}
+		#box .name{
+			margin-right: 0.5rem;
+		}
+		#box .tel{
+			color:#cb0000;
+		}
+		#box .default{
+			float: right;
+			width:1.3rem;
+			text-align: right;
+			background: url(../images/location.png) left center no-repeat;
+			background-size: 0.2rem 0.27rem;
+		}
+		#box .default2{
+			float: right;
+			width:1.3rem;
+			text-align: right;
+			background: url(../images/location_fen.png) left center no-repeat;
+			color:#cb0000;
+			background-size: 0.2rem 0.27rem;
+		}
+		#box .bottom{
+			padding:0.2rem;
+			overflow: hidden;
+		}
+		#box .redact{
+			float: right;
+			font-size: 0.3rem;
+			color:#000;
+		}
+		.redact span{
+			margin-left: 0.3rem;
+			color:#000;
+		}
+		#button{
+			width:90%;
+			height:0.8rem;
+			background-color:#cb0000;
+			margin:0 auto;
+			border-radius:0.1rem;
+			font-size: 0.3rem;
+			color:#fff;
+			line-height: 0.8rem;
+			text-align: center;
+		}

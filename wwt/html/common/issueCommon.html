@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>粤人无数</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/pub.css">
+	<link rel="stylesheet" href="../../css/issueCommon.css">
+	<script type="text/javascript" src="../../js/suit.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+	<style>
+		#AABOX{
+			position: relative;
+			/* width:1rem; */
+		}
+		#radio1{
+			position: absolute;
+			left:0rem;
+			top:0.2rem;
+			width:100%;
+			height:0.45rem;
+			opacity: 0;
+		}
+		#MYBOX{
+			position: relative;
+		}
+		#radio2{
+			position: absolute;
+			left:0rem;
+			top:0.2rem;
+			width:100%;
+			height:0.45rem;
+			opacity: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="top">
+			<img id="prev" src="../../images/prev.png"></img>
+			<div id="top_text">我要发拼</div>
+		</div>
+		<div id="content">
+			<div id="meetTopicBox" class="box"><label for="meetTopic">聚会主题</label><input type="text" id="meetTopic" class="child"></div>
+			<div id="meetInfoBox" class="box"><label for="meetInfo">聚会说明</label><input type="text" id="meetInfo" class="child"></div>
+			<div id="personNumBox" class="box"><label for="personNum">聚会人数</label><input type="text" id="personNum" class="child"></div>
+			<div id="meetTimeBox" class="box"><label for="meetTime">具体时间</label><input type="text" id="meetTime" class="child"></div>
+			<div id="addresBox" class="box">聚会地点<span id="addres" class="child"></span></div>
+			<div id="telNumBox" class="box"><label for="telNum">联系方式</label><input type="text" id="telNum" class="child"></div>
+			<div id="costTypeBox" class="box">付款方式
+				<div id="type">
+					<div id="AABOX">
+						<input type="radio" name="1" value="" id="radio1" checked>
+						<div class="full" id="AA"></div>
+						<label class="AA" for="">AA制</label>
+					</div>
+					<div id="MYBOX">
+						<input type="radio" name="1" value="" id="radio2">
+						<div class="empty" id="MY"></div>
+						<label class="MY" for="">我请客</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="publishBTN">发布</div>
+	</div>
+	<script type="text/javascript" src="../../js/issueCommon.js"></script>
+</body>
+</html>

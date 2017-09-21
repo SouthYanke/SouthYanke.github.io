@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/pub.css">
+	<link rel="stylesheet" href="../../css/exchangeInfo.css">
+	<script type="text/javascript" src="../../js/suit.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+	<style>
+		body{
+			background-color: #f8f8f8;
+			overflow: hidden;
+		}
+		#header{
+			width: 7.5rem;
+			height: 0.88rem;
+			background-color: #f9c8a7;
+			color: #FFFFFF;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 999;
+			font-size: 0.34rem;
+			text-align: center;
+			line-height: 0.88rem;
+			overflow: hidden;
+		}
+		#header *{
+			float: left;
+		}
+		#header #header_left {
+			width: 0.8rem;
+			height: 0.88rem;
+			position: absolute;
+			top: 0rem;
+			left:0rem;
+		}
+		#prev{
+			width: 0.28rem;
+			height: 0.38rem;
+			margin:0.25rem 0 0 0.2rem;
+		}
+		#ordeNumber{
+			margin-top: 0.88rem;
+			width:97%;
+			height:0.8rem;
+			background-color: #fff;
+			padding-left: 0.2rem;
+			font-size: 0.25rem;
+			line-height: 0.8rem;
+		}
+		#logistics{
+			margin-top: 0.05rem;
+			width:97%;
+			height:0.8rem;
+			font-size: 0.25rem;
+			line-height: 0.8rem;
+			/* background-color: #fff; */
+			background: #fff url(../../images/6_03.png) 0.2rem center no-repeat;
+			background-size: 0.4rem 0.32rem;
+			padding-left: 0.74rem;
+			overflow: hidden;
+		}
+		#logistics span{
+			margin-right: 1.2rem;
+			float: right;
+			margin-top: 0.05rem;
+		}
+		#logistics span img{
+			width:0.3rem;
+			height:0.3rem;
+		}
+		#userinfo{
+			padding:0.2rem;
+			width:93%;
+			/* height:1.5rem; */
+			border:0.06rem #acdffa dotted;
+			margin-top: 0.2rem;
+			font-size:0.25rem;
+			color:#666;
+			background-color: #fffaf4;
+		}
+		#userinfo .name{
+			margin-right: 0.5rem;
+			background: url(../../images/tre.png) left center no-repeat;
+			background-size: 0.38rem 0.36rem;
+			padding-left: 0.46rem;
+		}
+		#userinfo .tel{
+			float: right;
+			width:1.3rem;
+			text-align: right;
+			background: url(../../images/6_09.png) left center no-repeat;
+			background-size: 0.2rem 0.27rem;
+			margin-right: 0.3rem;
+			padding-left: 0.33rem;
+		}
+		#userinfo .location{
+			margin-top: 0.05rem;
+		}
+		#live{
+			margin-top: 0.2rem;
+			width:97%;
+			height:0.8rem;
+			background-color: #fff;
+			padding-left: 0.2rem;
+			font-size: 0.25rem;
+			line-height: 0.8rem;
+		}
+		#goods{
+			margin-top: 0.05rem;
+			width:97%;
+			/* height:2rem; */
+			font-size: 0.25rem;
+			background-color: #fff;
+			/* padding-left: 0.2rem; */
+			overflow: hidden;
+			padding:0.2rem;
+		}
+		#goods img{
+			width:1.5rem;
+			height:1.5rem;
+			float: left;
+		}
+		#tradeName{
+			margin-left: 0.2rem;
+			float: left;
+			font-size: 0.25rem;
+			width:4rem;
+			height:1.2rem;
+			line-height: 0.4rem;
+			word-wrap:break-word;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 3;
+			overflow: hidden;
+		}
+		#prices{
+			float: right;
+			font-size: 0.25rem;
+			margin-right: 0.2rem;
+		}
+		#tradeNumber{
+			width:2.5rem;
+			float: left;
+			font-size: 0.25rem;
+			clear: right;
+			margin-left: 0.2rem;
+		}
+		#information{
+			margin-top: 0.2rem;
+			width:97%;
+			height:0.8rem;
+			background-color: #fff;
+			padding-left: 0.2rem;
+			font-size: 0.25rem;
+			line-height: 0.8rem;
+		}
+		#information span{
+			float: left;
+		}
+		#information var{
+			float: right;
+			margin-right: 0.2rem;
+		}
+		#figure{
+			margin-top: 0.2rem;
+			width:97%;
+			height:0.8rem;
+			background-color: #fff;
+			padding-left: 0.2rem;
+			font-size: 0.25rem;
+			line-height: 0.8rem;
+		}
+		#figure span{
+			float: left;
+		}
+		#figure var{
+			float: right;
+			margin-right: 0.2rem;
+			color:#fd4b47;
+		}
+		#out-of-pocket{
+			/* height:1.2rem; */
+			margin-top: 0.05rem;
+			width:97%;
+			font-size: 0.25rem;
+			background-color: #fff;
+			padding: 0.2rem;
+			overflow: hidden;
+		}
+		#out-of-pocket span{
+			font-size: 0.25rem;
+			float: right;
+			margin-right: 0.2rem;
+		}
+		#out-of-pocket span var{
+			font-size: 0.4rem;
+			color:#fd4b47;
+		}
+		#out-of-pocket p{
+			font-size: 0.15rem;
+			float: right;
+			margin-right: 0.2rem;
+			clear: right;
+			color:#aaa;
+			margin-top: 0.2rem;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<a id="header_left" href="./exchangeInfo.html">
+			<img id="prev" src="../../images/prev.png"></img>
+		</a>订单确认
+	</div>
+	<div id="ordeNumber">订单号：<var>12684072</var></div>
+	<a href=""><div id="logistics">[点击显示物流信息] <span><img src="../../images/ddd.png" alt=""></span></div></a>
+	<div id="userinfo">
+		<span class="name">张秋营</span>
+		<span class="tel">13293241256</span>
+		<p class="location">北京市北京海淀区西小口新华创新大厦3楼</p>
+	</div>
+	<div id="live">生活圈</div>
+	<div id="goods">
+		<img src="../../images/img_2_@2x (3).png" alt="">
+		<span id="tradeName">来自维多利亚的哲尔尼亚斯·阿蒋特罗夫斯基</span>
+		<span id="prices">500</span>
+		<span id="tradeNumber">X<var>1</var></span>
+	</div>
+	<div id="information">
+		<span>配送信息</span>
+		<var>暂无</var>
+	</div>
+	<div id="figure">
+		<span>商品金额</span>
+		<var>500</var>
+	</div>
+	<div id="out-of-pocket">
+		<span>实付：<var>500</var></span>
+		<p>下单时间：<var>2017-08-07 19:11:26</var></p>
+	</div>
+</body>
+</html>
